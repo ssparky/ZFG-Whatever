@@ -1,0 +1,16 @@
+filename = 'Infinite Abyss 1.20.1 version 1.8.5.jar'
+name = 'Infinite Abyss'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'a458d6641392ac8c9b31ff3ac1cbd134b3ed9693aebc8faa60ab831afc10aaef450c7d342b6997853ca83c6b07e9596e6e74a1706a021d0d3bc01497f0fc9a82'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Lskhd0JT/versions/aL15oCir/Infinite Abyss 1.20.1 version 1.8.5.jar'
+
+[update.modrinth]
+mod-id = 'Lskhd0JT'
+version = 'aL15oCir'

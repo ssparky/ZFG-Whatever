@@ -1,0 +1,16 @@
+filename = 'gregtechterminals-6.8.5-fix.jar'
+name = 'Gregtech Terminals'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '585c0355ca53851616670fd40474637a13ef46997f5c3ce4bb4c497958ed107be488848fbba7604062b74a51ed3baacf66a8ebd5985652368302ba6146f0a317'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/jIBIhAO2/versions/9p3g1V5R/gregtechterminals-6.8.5-fix.jar'
+
+[update.modrinth]
+mod-id = 'jIBIhAO2'
+version = '9p3g1V5R'

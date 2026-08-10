@@ -1,0 +1,16 @@
+filename = 'bountifulbaubles-1.6.4.jar'
+name = 'BountifulBaubles:Reforked'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e6ec233ae346d504c165b064a8d2dcbf8355335ce8a019cbea50dd92db144b0219b0945d5cb52662e7d5581597dfb5da2855cbf14b497437d73a905a90eb39ce'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/BtTpbdm3/versions/G0EZkgMj/bountifulbaubles-1.6.4.jar'
+
+[update.modrinth]
+mod-id = 'BtTpbdm3'
+version = 'G0EZkgMj'

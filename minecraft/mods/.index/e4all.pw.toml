@@ -1,0 +1,30 @@
+filename = 'e4all-forge-1.6.4.jar'
+name = 'e4all'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [
+    '1.18',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19.1',
+    '1.19.2',
+    '1.19.3',
+    '1.19.4',
+    '1.20',
+    '1.20.1',
+    '1.20.2',
+    '1.20.3',
+    '1.20.4'
+]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '06ba03c5d6ee14b12ae07ab4ce7e792f5a14790022f0fab3f8b044f1659f02c90c5bd22341a01e70369c93423766dd8e837d563aa1c289c6924ba7fa5b941c67'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/fB1gJLGX/versions/WghhiNBl/e4all-forge-1.6.4.jar'
+
+[update.modrinth]
+mod-id = 'fB1gJLGX'
+version = 'WghhiNBl'

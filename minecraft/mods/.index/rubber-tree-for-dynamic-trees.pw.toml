@@ -1,0 +1,16 @@
+filename = 'RubberDynamicTrees-1.0-1.20.1.jar'
+name = 'GregTech Rubber Tree for Dynamic Trees'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1aef137416eb904b43c70a9a4b88acc5065ad8a6534b04cc70a25a046fdd8678fd5fc18f54811d2a18a0fce60144082785379654c99496e574bb6d5d0d3b12d8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZV02LDzW/versions/IMAzPVnQ/RubberDynamicTrees-1.0-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'ZV02LDzW'
+version = 'IMAzPVnQ'

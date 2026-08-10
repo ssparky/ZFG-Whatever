@@ -1,0 +1,34 @@
+{
+  "machine": "phoenix_fission:molten_salt_reactor",
+  "startCamera": null,
+  "steps": [
+    {
+      "tick": 0,
+      "caption": null,
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [],
+      "blockTransitions": []
+    }
+  ],
+  "scriptDuration": -1,
+  "expandable": false,
+  "recipeId": null,
+  "items": [],
+  "globalMistakes": [],
+  "optionalGroups": []
+}

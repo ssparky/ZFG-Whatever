@@ -1,0 +1,16 @@
+filename = 'placeablemaxwell-2.1.2+1.20.1-forge.jar'
+name = 'Maxwell the placeable cat'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e80ed0fb006327d505a0281b5d54446c16482296650692bd5098e97516dd8a5d7811f2eb82a39802ea68f328b8600129bf84f8c533f4a736b8b46a4726524908'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8yMHBbeg/versions/7Swjyyty/placeablemaxwell-2.1.2%2B1.20.1-forge.jar'
+
+[update.modrinth]
+mod-id = '8yMHBbeg'
+version = '7Swjyyty'

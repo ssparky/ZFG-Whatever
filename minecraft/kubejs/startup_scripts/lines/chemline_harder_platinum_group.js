@@ -1,0 +1,178 @@
+/**
+ ! Hardcore mode platinum line
+ */
+
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("iridium_dioxide_residue")
+        .dust()
+        .color(0x17182e).iconSet("rough")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("iridium", "2x oxygen", "rare_earth")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("chloroplatinic_acid")
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
+        .color(0xfef0c2)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x hydrogen", "platinum", "6x chlorine")
+
+    event.create("palladium_rich_ammonia")
+        .fluid()
+        .color(0x808080)
+        .components("2x ammonia", "palladium", "chlorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("rhodium_sulfate_solution")
+        .fluid()
+        .color(0xffbb66)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("rhodium_sulfate", "water");
+
+    event.create("acidic_iridium_dioxide_solution")
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
+        .color(0x27284e)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("iridium_dioxide_residue", "4x hydrochloric_acid")
+
+    event.create("platinum_palladium_leachate")
+        .fluid()
+        .color(0xffffc5)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("platinum", "palladium", "aqua_regia")
+
+    event.create("methyl_formate")
+        .fluid()
+        .color(0xffaaaa)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x carbon", "4x hydrogen", "2x oxygen")
+
+    event.create("platinum_metallic")
+        .dust()
+        .color(0xfffbc5).iconSet("metallic")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("platinum", "rare_earth")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("palladium_metallic")
+        .dust()
+        .color(0x808080).iconSet("metallic")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("palladium", "rare_earth")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("ammonium_hexachloroplatinate")
+        .dust()
+        .color(0xfef0c2).iconSet("metallic")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x nitrogen", "8x hydrogen", "platinum", "6x chlorine")
+        .formula("(NH4)2PtCl6")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("potassium_bisulfate")
+        .dust()
+        .color(0xfdbd68)
+        .components("potassium", "hydrogen", "sulfur", "4x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("potassium_pyrosulfate")
+        .dust()
+        .color(0xfbbb66)
+        .components("2x potassium", "2x sulfur", "7x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("zinc_sulfate")
+        .dust()
+        .color(0x846649).iconSet("fine")
+        .components("zinc", "sulfur", "4x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("sodium_nitrate")
+        .dust()
+        .color(0x846684).iconSet("rough")
+        .components("sodium", "nitrogen", "3x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("rhodium_nitrate")
+        .dust()
+        .color(0x776649).iconSet("fine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("rhodium", "3x nitrogen", "9x oxygen")
+        .formula("Rh(NO3)3")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("sodium_ruthenate")
+        .dust()
+        .color(0x3a40cb).iconSet("shiny")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x sodium", "ruthenium", "4x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("sodium_peroxide")
+        .dust()
+        .color(0xecff80).iconSet("rough")
+        .components("2x sodium", "2x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("ammonium_hexachloroiridiate")
+        .dust()
+        .color(0x644629).iconSet("rough")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x nitrogen", "2x hydrogen", "iridium", "6x chlorine")
+        .formula("(NH4)2IrCl6");
+
+    event.create("platinum_group_residue")
+        .dust()
+        .color(0x64632e).iconSet("rough")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("iridium", "osmium", "rhodium", "ruthenium", "rare_earth");
+
+    event.create("crude_platinum_residue")
+        .dust()
+        .color(0xfffbc5).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("platinum_raw")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("crude_palladium_residue")
+        .dust()
+        .color(0x909090).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("palladium_raw")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("iridium_group_sludge")
+        .dust()
+        .color(0x644629).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("iridium", "osmium", "ruthenium", "rare_earth")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("crude_rhodium_residue")
+        .dust()
+        .color(0x666666).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x rhodium", "water")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("rhodium_salt")
+        .dust()
+        .color(0x848484).iconSet("shiny")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("2x salt", "2x rhodium", "6x chlorine")
+        .formula("(NaCl)2(RhCl3)2")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+
+    event.create("sodium_methoxide")
+        .dust()
+        .color(0xd0d0f0).iconSet("dull")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("carbon", "3x hydrogen", "oxygen", "sodium");
+
+    // Misc byproduct acids
+    event.create("selenic_acid").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x6E2727).iconSet("dull").components("2x hydrogen", "1x selenium", "4x oxygen")
+    event.create("selenic_nickel_solution").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x8DE343).iconSet("dull").components("1x nickel", "1x oxygen", "1x selenic_acid")
+    event.create("selenic_copper_solution").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x43E3A0).iconSet("dull").components("1x copper", "1x oxygen", "1x selenic_acid")
+    event.create("telluric_acid").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x5A3D70).iconSet("dull").components("6x hydrogen", "1x tellurium", "6x oxygen")
+    event.create("telluric_nickel_solution").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x27973A).iconSet("dull").components("1x nickel", "1x oxygen", "1x telluric_acid")
+    event.create("telluric_copper_solution").liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID)).color(0x296B97).iconSet("dull").components("1x copper", "1x oxygen", "1x telluric_acid")
+});

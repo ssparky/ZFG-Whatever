@@ -1,0 +1,16 @@
+filename = 'muchmoredungeons-forge-1.20.1-1.1.3.jar'
+name = 'Much More Dungeons'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '12296911fdf1b39f3f29bb7875e90ac85b38c25507750faf5c6cce222330e98eefda31727ff08d2e8412e47f377706e12314693f6ed5b010ea188c4afbeca0cd'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ydBxwDBa/versions/Qrh01YiB/muchmoredungeons-forge-1.20.1-1.1.3.jar'
+
+[update.modrinth]
+mod-id = 'ydBxwDBa'
+version = 'Qrh01YiB'

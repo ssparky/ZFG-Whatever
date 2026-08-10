@@ -1,0 +1,16 @@
+filename = 'endersdelight-1.1.4.jar'
+name = "Ender's Delight"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '554a74f9db3b4496fbb98bee3f456495cecdd9e9471d1f8a0de031dfff928f3903e0a76d9e3cbbc785b315833f23bf8593419d11207eb082c8a195e8fe65ad90'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/2uEhdGKt/versions/Jaf9wxnO/endersdelight-1.1.4.jar'
+
+[update.modrinth]
+mod-id = '2uEhdGKt'
+version = 'Jaf9wxnO'

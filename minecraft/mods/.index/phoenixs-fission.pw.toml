@@ -1,0 +1,16 @@
+filename = 'PhoenixFission-2.4.jar'
+name = "Phoenix's Fission"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'a0d3bbf578edd72f301c0c75b11e5db7b689ff79'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8481163
+project-id = 1443603

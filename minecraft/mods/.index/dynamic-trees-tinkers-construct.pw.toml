@@ -1,0 +1,16 @@
+filename = 'DynamicTreesTinkersConstruct-1.20.1-1.5.0.jar'
+name = "Dynamic Trees - Tinker's Construct"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '08ab597f600bed3a8c54bfa3a2ae9282e16309a2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6702991
+project-id = 386747

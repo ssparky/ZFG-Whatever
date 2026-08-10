@@ -1,0 +1,12 @@
+{
+  "minecraft:overworld": [
+    {
+      "x": 587,
+      "y": 27,
+      "z": 738,
+      "name": "Iron Vein",
+      "colorArgb": -6846662,
+      "itemId": "gtceu:raw_goethite"
+    }
+  ]
+}

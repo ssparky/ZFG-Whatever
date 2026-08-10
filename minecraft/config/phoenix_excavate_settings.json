@@ -1,0 +1,12 @@
+{
+  "respectHunger": true,
+  "generalMiningExhaustion": false,
+  "respectDurability": true,
+  "respectEnchantments": true,
+  "maxVeinSize": 64,
+  "includeDiagonalNeighbors": true,
+  "holdToActivate": true,
+  "matchModeId": "exact",
+  "theme": "DARK",
+  "outlineColorHex": ""
+}

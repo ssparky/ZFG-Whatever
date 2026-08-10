@@ -1,0 +1,78 @@
+{
+  "ore": [
+    {
+      "type": "TAG",
+      "id": "minecraft:coal_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:iron_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:copper_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:gold_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:redstone_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:lapis_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:diamond_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:emerald_ores"
+    }
+  ],
+  "any": [
+    {
+      "type": "TAG",
+      "id": "minecraft:coal_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:iron_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:copper_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:gold_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:redstone_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:lapis_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:diamond_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:emerald_ores"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:logs"
+    },
+    {
+      "type": "TAG",
+      "id": "minecraft:leaves"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "version": "3.0",
+  "description": "GTCEu Terminal - Dual Hatch Configuration",
+  "entries": [
+    {
+      "blockId": "gtceu:lv_dual_input_hatch",
+      "displayName": "LV Dual Input Hatch",
+      "tierName": "LV",
+      "tier": 1,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:lv_huge_dual_hatch",
+      "displayName": "LV Huge Dual Hatch",
+      "tierName": "LV",
+      "tier": 1,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:mv_dual_input_hatch",
+      "displayName": "MV Dual Input Hatch",
+      "tierName": "MV",
+      "tier": 2,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:mv_huge_dual_hatch",
+      "displayName": "MV Huge Dual Hatch",
+      "tierName": "MV",
+      "tier": 2,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:hv_dual_input_hatch",
+      "displayName": "HV Dual Input Hatch",
+      "tierName": "HV",
+      "tier": 3,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:hv_huge_dual_hatch",
+      "displayName": "HV Huge Dual Hatch",
+      "tierName": "HV",
+      "tier": 3,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:ev_dual_input_hatch",
+      "displayName": "EV Dual Input Hatch",
+      "tierName": "EV",
+      "tier": 4,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:ev_huge_dual_hatch",
+      "displayName": "EV Huge Dual Hatch",
+      "tierName": "EV",
+      "tier": 4,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:iv_dual_input_hatch",
+      "displayName": "IV Dual Input Hatch",
+      "tierName": "IV",
+      "tier": 5,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:iv_huge_dual_hatch",
+      "displayName": "IV Huge Dual Hatch",
+      "tierName": "IV",
+      "tier": 5,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:luv_dual_input_hatch",
+      "displayName": "LuV Dual Input Hatch",
+      "tierName": "LuV",
+      "tier": 6,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:luv_huge_dual_hatch",
+      "displayName": "LuV Huge Dual Hatch",
+      "tierName": "LuV",
+      "tier": 6,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:zpm_dual_input_hatch",
+      "displayName": "ZPM Dual Input Hatch",
+      "tierName": "ZPM",
+      "tier": 7,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:zpm_huge_dual_hatch",
+      "displayName": "ZPM Huge Dual Hatch",
+      "tierName": "ZPM",
+      "tier": 7,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtceu:uv_dual_input_hatch",
+      "displayName": "UV Dual Input Hatch",
+      "tierName": "UV",
+      "tier": 8,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtceu"
+      }
+    },
+    {
+      "blockId": "gtmthings:uv_huge_dual_hatch",
+      "displayName": "UV Huge Dual Hatch",
+      "tierName": "UV",
+      "tier": 8,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:uhv_huge_dual_hatch",
+      "displayName": "UHV Huge Dual Hatch",
+      "tierName": "UHV",
+      "tier": 9,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:uev_huge_dual_hatch",
+      "displayName": "UEV Huge Dual Hatch",
+      "tierName": "UEV",
+      "tier": 10,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:uiv_huge_dual_hatch",
+      "displayName": "UIV Huge Dual Hatch",
+      "tierName": "UIV",
+      "tier": 11,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:uxv_huge_dual_hatch",
+      "displayName": "UXV Huge Dual Hatch",
+      "tierName": "UXV",
+      "tier": 12,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:opv_huge_dual_hatch",
+      "displayName": "OpV Huge Dual Hatch",
+      "tierName": "OpV",
+      "tier": 13,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    },
+    {
+      "blockId": "gtmthings:max_huge_dual_hatch",
+      "displayName": "MAX Huge Dual Hatch",
+      "tierName": "MAX",
+      "tier": 14,
+      "attrs": {
+        "hatchType": "INPUT",
+        "source": "gtmthings"
+      }
+    }
+  ]
+}

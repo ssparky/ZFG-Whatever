@@ -1,0 +1,16 @@
+filename = 'dragonlib-forge-1.20.1-beta-3.0.28.jar'
+name = 'DragonLib'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '290fc29351665a56a5abb166b0968784062129fb450a0ef6f603342b223fafdc348ed790b938e5d3dea1539a4713f7098df950b398571a6b88bb74f5606f34d8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/sbIsGaOV/versions/RWduTzyi/dragonlib-forge-1.20.1-beta-3.0.28.jar'
+
+[update.modrinth]
+mod-id = 'sbIsGaOV'
+version = 'RWduTzyi'

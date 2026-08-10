@@ -1,0 +1,16 @@
+filename = 'ae2webintegration-1.0.2-forge-1.20.1.jar'
+name = 'AE2WebIntegration-Core'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '299f8206fd223620960d2719e5369793132873fc4aea74f6c0bf6150ca5155fd14e83fbeeead9d0ddb9b32955ac8ca22652b96f7f1116529714663e0b1abe1d8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8MGTfmHF/versions/69MXjRJP/ae2webintegration-1.0.2-forge-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '8MGTfmHF'
+version = '69MXjRJP'

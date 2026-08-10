@@ -1,0 +1,16 @@
+filename = 'tconjei-1.20.1-1.6.0.jar'
+name = 'TConJEI'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '921c947d52e516e533388575e42c07257f2b294b5c8b34cdc14f47aaa5245700189642d134342348f83de9cc4bc26413b293d36191ffca1fee16876faf53d0b4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DhBtjMiv/versions/NTfd22qe/tconjei-1.20.1-1.6.0.jar'
+
+[update.modrinth]
+mod-id = 'DhBtjMiv'
+version = 'NTfd22qe'

@@ -1,0 +1,16 @@
+filename = 'extendedfeatures-2.3.0.jar'
+name = 'GTM Extended Features'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'f876cfead3e8c7879b5da18d013bc30ffd1e5e359cee2b41b9543576259129204e0a2b7bbe788fecdb6232b04cfe0526fd85f7271fbc85f28e27af5225a84219'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9MCfIDeI/versions/dxZI3jWl/extendedfeatures-2.3.0.jar'
+
+[update.modrinth]
+mod-id = '9MCfIDeI'
+version = 'dxZI3jWl'

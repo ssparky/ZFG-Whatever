@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "default": [
+        {
+            "name": "tconstruct:maintained",
+            "level": 1
+        }
+    ]
+}

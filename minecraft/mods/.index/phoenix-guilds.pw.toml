@@ -1,0 +1,16 @@
+filename = 'phoenix_guilds-1.4.0.jar'
+name = 'Phoenix Guilds'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7b682070147e307bff2c7e175f29e6ccd26e7d41'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8584546
+project-id = 1612085
