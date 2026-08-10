@@ -65,17 +65,10 @@
         "id": "gtceu:impure_molten_ardite",
         "amount": 0
       }
-    },
-    {
-      "stack": {
-        "type": "fluid",
-        "id": "gtceu:ree_nitrate_solution",
-        "amount": 2000
-      },
-      "recipe": "kubejs:centrifuge/earthline/nitration"
     }
   ],
   "lookup_history": [
+    "item:regions_unexplored:argillite",
     {
       "type": "fluid",
       "id": "gtceu:nitric_tbp_residue",
@@ -1591,7 +1584,6 @@
     "item:infinite_abyss:deepstone",
     "item:regions_unexplored:volcanic_ash",
     "item:regions_unexplored:chalk",
-    "item:regions_unexplored:argillite",
     "item:natures_spirit:sandy_soil",
     "item:natures_spirit:white_chalk",
     "item:natures_spirit:kaolin",
