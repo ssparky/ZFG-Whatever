@@ -1,16 +1,16 @@
-filename = 'ExtendedAE-1.20-1.4.12-forge.jar'
-name = 'Extended AE'
+filename = 'ExtendedAE-1.20-1.4.18-forge.jar'
+name = 'ExtendedAE'
 side = 'both'
-x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '9d6eddf6804bc7dac3b107797e6f19e5c9d1b024cf9a10ebe4cda0b3ac491857ef256b3063c445683a7ffbf05b21ace39b5da532bba4ad19ce4cf0899fd105ee'
+hash = 'dfd368a2184a9e66fd33c2223eac9da3fcea5530541c45114ac1ec26a3c8ec593cc299a484f78c2c29b1d7a1daaf52a7e5037b26df289cb84cee4aee7743df42'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/JiOqfoFM/versions/leiXZvDb/ExtendedAE-1.20-1.4.12-forge.jar'
+url = 'https://cdn.modrinth.com/data/JiOqfoFM/versions/uq3lO4ER/ExtendedAE-1.20-1.4.18-forge.jar'
 
 [update.modrinth]
 mod-id = 'JiOqfoFM'
-version = 'leiXZvDb'
+version = 'uq3lO4ER'

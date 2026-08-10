@@ -1,4 +1,4 @@
-filename = 'cc-tweaked-1.20.1-forge-1.120.0.jar'
+filename = 'cc-tweaked-1.20.1-forge-1.120.2.jar'
 name = 'CC: Tweaked'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'a4b7153b1b8b8238981de7181942665f9b09aa14d4621b1bee5d4258192197d55f147699d596dfb81ec8853f9cbab5e5cc29d594a140114d575db8a2da76c5a4'
+hash = '66d6f0fa0dbc4e06ffb1d8968619a8fd1e9acbe24045cfaea52cf2c315e6f35e9e9285cc6845e26afc0ff61ee59cd96d494cb8cbc316e934adc7a226e2939abf'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/gu7yAYhd/versions/rx9gr1rz/cc-tweaked-1.20.1-forge-1.120.0.jar'
+url = 'https://cdn.modrinth.com/data/gu7yAYhd/versions/gRtcHJd8/cc-tweaked-1.20.1-forge-1.120.2.jar'
 
 [update.modrinth]
 mod-id = 'gu7yAYhd'
-version = 'rx9gr1rz'
+version = 'gRtcHJd8'
