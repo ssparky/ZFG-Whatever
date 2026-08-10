@@ -315,6 +315,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(200)
 
+    // Fix nitric TBP decomp recipe
+    event.remove({id:"gtceu:centrifuge/decomposition_centrifuging__nitric_tbp_residue"})
+    event.recipes.gtceu.centrifuge("kubejs:earthline/decomposition_centrifuging_nitric_tbp_residue")
+        .inputFluids("gtceu:nitric_tbp_residue 3000")
+        .outputFluids("gtceu:dilute_nitric_acid 1000", "gtceu:tributyl_phosphate 2000")
+        .duration(1.6*20)
+        .EUt(GTValues.VA[GTValues.LV])
+
     /**
      * RE-OXIDIZING RARE EARTHS
      */

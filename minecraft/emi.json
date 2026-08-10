@@ -65,9 +65,94 @@
         "id": "gtceu:impure_molten_ardite",
         "amount": 0
       }
+    },
+    {
+      "stack": {
+        "type": "fluid",
+        "id": "gtceu:ree_nitrate_solution",
+        "amount": 2000
+      },
+      "recipe": "kubejs:centrifuge/earthline/nitration"
     }
   ],
   "lookup_history": [
+    {
+      "type": "fluid",
+      "id": "gtceu:nitric_tbp_residue",
+      "amount": 1000
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:nitric_ree_tbp_mix",
+      "amount": 2000
+    },
+    {
+      "type": "item",
+      "id": "gtceu:ceria_dust",
+      "amount": 6
+    },
+    {
+      "type": "item",
+      "id": "gtceu:cerium_trioxide_dust",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "gtceu:ree_oxide_mix_dust",
+      "amount": 6
+    },
+    {
+      "type": "item",
+      "id": "gtceu:ree_oxalate_mix_dust",
+      "amount": 8
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:ree_hydroxide_concentrate",
+      "amount": 1500
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:uranium_filtrate",
+      "amount": 1000
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:uranium_hexafluoride",
+      "amount": 1000
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:enriched_uranium_hexafluoride",
+      "amount": 100
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:ree_hydroxide_solution",
+      "amount": 2000
+    },
+    {
+      "type": "item",
+      "id": "gtceu:ree_hydroxide_residue_dust",
+      "amount": 6
+    },
+    {
+      "type": "fluid",
+      "id": "gtceu:ree_sulfate_sludge",
+      "amount": 3000
+    },
+    {
+      "type": "item",
+      "id": "gtceu:concentrated_ree_sands_dust",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "gtceu:purified_ree_sands_dust",
+      "amount": 8
+    },
+    "item:gtceu:refined_xenotime_yb_ore",
+    "item:gtceu:purified_xenotime_yb_ore",
     "item:productivebees:gene{productivebees_gene_attribute:\"temper\",productivebees_gene_purity:100,productivebees_gene_value:2}",
     "item:productivebees:configurable_honeycomb{EntityTag:{type:\"productivebees:sticky_resin\"}}",
     {
@@ -618,17 +703,6 @@
     "item:productivebees:spawn_egg_dye_bee",
     "item:gtceu:sodium_polystyrene_sulfonate_plate",
     "item:kubejs:depleted_ion_exchange_resin",
-    {
-      "type": "item",
-      "id": "gtceu:ree_hydroxide_residue_dust",
-      "amount": 6
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:ree_sulfate_sludge",
-      "amount": 3000
-    },
-    "item:gtceu:concentrated_ree_sands_dust",
     "item:gtceu:praseodymium_oxalate_dust",
     {
       "type": "item",
@@ -752,7 +826,6 @@
     "item:gtceu:sodium_bisulfate_dust",
     "item:gtceu:thorium_pyrophosphate_dust",
     "item:gtceu:silicon_tetrafluoride_dust",
-    "item:gtceu:purified_ree_sands_dust",
     "item:gtceu:me_output_hatch",
     "item:gtceu:hexagonite_dust",
     "item:gtceu:exquisite_hexagonite_gem",
@@ -2302,49 +2375,7 @@
       "type": "item",
       "id": "gtceu:potassium_sulfate_dust",
       "amount": 7
-    },
-    {
-      "type": "item",
-      "id": "gtceu:sodium_methoxide_dust",
-      "amount": 54
-    },
-    {
-      "type": "item",
-      "id": "gtceu:platinum_raw_dust",
-      "amount": 3
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:platinum_palladium_leachate",
-      "amount": 0
-    },
-    {
-      "type": "item",
-      "id": "gtceu:ammonium_chloride_dust",
-      "amount": 8
-    },
-    "item:gtceu:purified_wulfenite_ore",
-    {
-      "type": "fluid",
-      "id": "gtceu:tetranitromethane",
-      "amount": 2000
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:ethenone",
-      "amount": 1000
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:acetic_anhydride",
-      "amount": 1000
-    },
-    "item:gtceu:paracetamol_dust",
-    "item:gtceu:large_electrolyzer",
-    "item:gtceu:sodium_hydroxide_dust",
-    "item:gtceu:large_chemical_bath",
-    "item:gtceu:hv_combustion",
-    "item:gtceu:bio_chaff"
+    }
   ],
   "craft_history": [
     "gtceu:electric_blast_furnace/blast_niobium_gas",
@@ -3265,28 +3296,28 @@
   ],
   "recipe_defaults": {
     "added": [
+      "gtceu:macerator/macerate_glass",
+      "gtceu:assembler/phenolic_board",
+      "gtceu:wiremill/mill_silver_wire",
+      "gtceu:compressor/compress_plate_dust_wood",
+      "gtceu:lathe/lathe_brass_to_rod",
+      "gtceu:lathe/lathe_invar_to_rod",
+      "gtceu:wiremill/mill_copper_wire_fine",
+      "gtceu:wiremill/mill_copper_wire",
+      "gtceu:shaped/small_dust_assembling_samarium_nitrate",
+      "gtceu:bender/bend_steel_to_plate",
+      "gtceu:lathe/lathe_steel_to_rod",
+      "gtceu:bender/bend_invar_to_plate",
+      "gtceu:extractor/extract_glass",
       "gtceu:lathe/lathe_iron_to_rod",
       "gtceu:wiremill/mill_red_alloy_wire",
-      "gtceu:extractor/extract_red_alloy_ingot",
-      "gtceu:lathe/lathe_invar_to_rod",
-      "gtceu:lathe/lathe_brass_to_rod",
-      "gtceu:polarizer/polarize_iron_rod",
-      "gtceu:assembler/assemble_invar_frame",
-      "gtceu:bender/bend_invar_to_plate",
-      "gtceu:macerator/macerate_glass",
-      "gtceu:bender/bend_steel_to_plate",
       "gtceu:bender/bend_copper_ingot_to_foil",
-      "gtceu:assembler/phenolic_board",
       "gtceu:assembler/basic_circuit_board",
       "gtceu:wiremill/mill_tin_wire",
-      "gtceu:compressor/compress_plate_dust_wood",
-      "gtceu:wiremill/mill_copper_wire_fine",
-      "gtceu:extractor/extract_glass",
-      "gtceu:bender/bend_wrought_iron_to_plate",
-      "gtceu:shaped/small_dust_assembling_samarium_nitrate",
-      "gtceu:wiremill/mill_silver_wire",
-      "gtceu:lathe/lathe_steel_to_rod",
-      "gtceu:wiremill/mill_copper_wire"
+      "gtceu:polarizer/polarize_iron_rod",
+      "gtceu:assembler/assemble_invar_frame",
+      "gtceu:extractor/extract_red_alloy_ingot",
+      "gtceu:bender/bend_wrought_iron_to_plate"
     ],
     "tags": {
       "#item:forge:dusts/certus_quartz": "item:ae2:certus_quartz_dust",
