@@ -1,5 +1,87 @@
 // priority: 20
 ServerEvents.tags("item", event => {
+    /** WASHING */
+    var sulfAcidWash = [
+        "churchite_y", "chinleite_ce", "tveitite_y", "bazzite", "nacareniobsite_nd", "monazite_nd", "hezuolinite", "retzian_ce", "remondite_ce", "xenotime_gd", "mendeleevite_ce",
+        "levinsonite_y", "agardite_dy", "retzian_la", "gadolinite_nd", "zircon", "voglite", "gagarinite_ce", "agardite_nd", "agardite_y", "aiolosite", "uranopolycrase",
+        "belovite_ce", "olgite", "xenotime_yb", "monazite_gd", "kolbeckite", "thulite", "chiluite", "deveroite_ce", "juonniite", "brucite", "chinleite_y", "nacareniobsite_ce",
+        "heamanite_ce", "schiavinatoite", "agardite_ce", "thorianite", "chinleite_nd", "seeligerite", "alwilkinsite_y", "mendeleevite_nd", "tancaite_ce", "fergusonite_ce",
+        "gadolinite_ce", "agardite_la", "euxinite_y", "retzian_nd", "monazite_ce", "fergusonite_y", "brannerite", "gagarinite_y", "churchite_nd", "monazite_sm", "churchite_dy",
+        "clinosulphur", "xenotime_y", "neptunite", "armstrongite", "enalite", "fergusonite_nd", "moydite_y", "thorutite", "gadolinite_y", "remondite_la"
+    ]
+    sulfAcidWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/sulfuric_acid", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var persulfateWash = [
+        "algodonite", "briartite", "foordite", "ebnerite", "aluminium", "bakakinite", "tetrahedrite_ni", "hexahydrite", "petewilliamsite", "cobalt", "tetrahedrite_cd",
+        "sohngeite", "iron", "tetrahedrite_mn", "gallite", "tetrahedrite", "zincochromite", "phosphophyllite", "ilmenite", "proxidecagonite", "tazieffite", "cobaltpentlandite",
+        "yarrowite", "bixbyite_mn", "stilleite", "muscovite", "zincsilite", "cesiodymite", "glaucodot", "nolanite", "lehmannite", "cuprobismutite", "sakuraiite", "berlinite",
+        "larosite", "cerite_ceca", "ajoite", "cylindrite", "natanite", "kinoite", "domeykite", "annite", "pentlandite", "stibnite", "oregonite", "troilite", "chiastolite",
+        "omariniite", "bauxite", "ishiharaite", "utahite", "bosiite", "goldmanite", "phosphosiderite", "scottyite", "padparadscha", "takovite", "hochleitnerite",
+        "jonlarsenite", "matsubaraite", "mixite", "tetrahedrite_fe", "umangite", "cupalite", "hopeite", "malachite", "chamosite", "diadochite", "aurorite", "decagonite",
+        "tin", "magneliite", "sphalerite", "xanthiosite", "limonite", "stannite", "hoslite", "dritsite", "goldfieldite", "fluellite", "grimmite", "trolleite", "icosahedrite",
+        "cuprite", "vauxite", "cobaltite", "corundum", "yvonite", "paragonite", "tetrahedrite_hg", "cuprostibite"
+    ]
+    persulfateWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/sodium_persulfate", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var chloricAcidWash = [
+        "betpakdalite_nana", "stangersite", "castaingite", "datolite", "tantalcarbide", "dzhezkazganite", "novikovite", "gedrite", "breyite", "dulanggouite", "tuliokite",
+        "bussenite", "kolicite", "bicapite", "althupite", "itsiite", "uranocircite", "garmite", "mozgovaite", "johnsenite_ce", "hibschite", "indite", "maxixe", "manganvesuvianite",
+        "antigorite", "schizolite", "tarkianite", "niobocarbide", "alexandrite", "triplite", "magnesiotaaffeite_2n2s", "zavaritskite", "dravite", "cymophane", "bismite", "oyonite",
+        "grossite", "pezzottaite_cs", "rhodochrosite", "lizardite", "dolomite", "coconinoite", "artinite", "perite", "nephrite", "chrysoberyl", "spinel", "ikaite", "polyphite",
+        "usovite", "senkevichite", "veenite", "hawleyite", "bismuthinite", "magnesiotaaffeite_6n3s", "rathite", "warkite", "vayrynenite", "uranosilite", "russellite", "tiptopite",
+        "epistolite", "jadeite", "joseite", "carnallite", "riebeckite", "isokite", "nickolayite", "gortdrumite", "siderite", "chukhrovite_y", "bearsite", "wagnerite", "adrianite",
+        "putnisite", "rheniite", "eifelite", "sanidine"
+    ]
+    chloricAcidWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/hydrochloric_acid", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var mercuryWash = [
+        "babkinite", "tungstate", "bogdanovite", "fischesserite", "colusite", "xanthoconite", "bouazzerite", "acanthite", "interliveingite", "vanadinite", "auricupride", "alburnite",
+        "stephanite", "bieberite", "atokite", "cervelleite", "stalderite", "mohite", "copper", "kegelite", "minium", "cooperite", "nickel", "tetraferroplatinum", "cadsulfohite",
+        "spryite", "eta_bronze", "crocoite", "burgessite", "platinum", "carlinite", "skaergaardite", "laforetite", "magnetite", "lautite", "allargentum", "alamosite", "glucine",
+        "silver", "chalcopyrite", "manganite", "girdite", "bornite", "hexamolybdenum", "pyrargyrite", "nekrasovite", "niggliite", "xuwenyuanite", "maldonite", "polybasite",
+        "anyuiite", "aguilarite", "galena", "gold", "cabriite", "yarlongite"
+    ]
+    mercuryWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/mercury", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var nitricWash = [
+        "yixunite", "sopcheite", "cuprorhodsite", "fleetite", "genkinite", "hexaferrum", "osarsite", "rutheniridosmine", "mayingite", "selenolaurite", "rhodplumsite", "cuproiridsite",
+        "ruthenarsenite", "ruarsite", "ferhodsite", "mertieite", "testibiopalladite", "polarite", "chengdeite", "gaotaiite", "xingzhongite", "jedwabite", "merenskyite", "lepersonnite_nd",
+        "erlichmanite", "driekopite", "kuvaevite", "laurite", "lepersonnite_gd"
+    ]
+    nitricWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/nitric_acid", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var fluoricAcidWash = [
+        "fullerite", "enquedire", "enquedite", "tartarosite", "enquedine"
+    ]
+    fluoricAcidWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/hydrofluoric_acid", `gtceu:crushed_${ore}_ore`)
+    })
+
+    var butadieneWash = [
+        "bromargyrite", "chlorargyrite", "iodargyrite"
+    ]
+    butadieneWash.forEach(ore => {
+        event.add("gtceu:washedin", `gtceu:crushed_${ore}_ore`)
+        event.add("gtceu:washedin/butadiene", `gtceu:crushed_${ore}_ore`)
+    })
+
+    /** CUSTOM OREPROC */
     // Platline
     var platOres = [
         "tornroosite", "geerite", "roxbyite", "anilite", "umangite", "hrabakite", "jinxuite", "ferhodsite", "sugakiite", "oosterboschite", "gortdrumite", "yarrowite",
@@ -97,5 +179,7 @@ ServerEvents.tags("item", event => {
     })
 
     // Uranium/Thorium line
+
+    // Nq Line
 
 });

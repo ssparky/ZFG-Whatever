@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("2x niobium", "5x oxygen")
 
     event.create("beryllium_oxide").ingot().iconSet(GTMaterialIconSet.DULL).color(0xA8DD9B).secondaryColor(0x436144)
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x beryllium", "1x oxygen")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL).components("1x beryllium", "1x oxygen")
 
     event.create("molybdenum_trioxide").dust().iconSet(GTMaterialIconSet.DULL).color(0x9EA6C9).secondaryColor(0x64687A)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("1x molybdenum", "3x oxygen")

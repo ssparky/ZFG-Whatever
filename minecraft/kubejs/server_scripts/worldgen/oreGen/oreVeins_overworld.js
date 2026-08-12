@@ -818,6 +818,135 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
+    registerOreVein("overworld/azurite", {
+        weight: 31,
+        clusterSize: 70,
+        density: 0.9,
+        layer: "stone",
+        dimensions: [
+            "minecraft:overworld"
+        ],
+        heightRange: {
+            type: "uniform",
+            min: 20,
+            max: 90
+        },
+        generator: {
+            type: "veined",
+            oreBlocks: [
+                {
+                    material: GTMaterials.get("calcite"),
+                    weight: 5
+                },
+                {
+                    material: GTMaterials.get("azurite"),
+                    weight: 5
+                },
+                {
+                    material: GTMaterials.get("malachite"),
+                    weight: 3
+                },
+                {
+                    material: GTMaterials.get("azurmalachite"),
+                    weight: 3
+                }
+            ],
+            rareBlocks: [
+                {
+                    material: GTMaterials.get("sodalite"),
+                    weight: 2
+                },
+                {
+                    material: GTMaterials.get("lazurite"),
+                    weight: 2
+                },
+                {
+                    material: GTMaterials.get("lazulite"),
+                    weight: 1
+                }
+            ],
+            rareBlockChance: 0.95,
+            veininessThreshold: 0.1,
+            maxRichnessThreshold: 0.3,
+            minRichness: 0.5,
+            maxRichness: 1.0,
+            edgeRoundoffBegin: 10,
+            maxEdgeRoundoff: 0.2
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("azurite"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
+    registerOreVein("overworld/lithium", {
+        weight: 40,
+        clusterSize: 85,
+        density: 0.66,
+        layer: "stone",
+        dimensions: [
+            "minecraft:overworld"
+        ],
+        heightRange: {
+            type: "triangle",
+            min: 20,
+            max: 100
+        },
+        generator: {
+            type: "dike",
+            blocks: [
+                {
+                    material: GTMaterials.get("siderite"),
+                    weight: 5,
+                    minY: 35,
+                    maxY: 100
+                },
+                {
+                    material: GTMaterials.get("phosphosiderite"),
+                    weight: 4,
+                    minY: 20,
+                    maxY: 100
+                },
+                {
+                    material: GTMaterials.get("triphylite"),
+                    weight: 4,
+                    minY: 40,
+                    maxY: 100
+                },
+                {
+                    material: GTMaterials.get("lipscombite"),
+                    weight: 2,
+                    minY: 20,
+                    maxY: 90
+                },
+                {
+                    material: GTMaterials.get("phosphophyllite"),
+                    weight: 3,
+                    minY: 20,
+                    maxY: 75
+                },
+                {
+                    material: GTMaterials.get("xenophyllite"),
+                    weight: 2,
+                    minY: 25,
+                    maxY: 80
+                },
+                {
+                    material: GTMaterials.get("phosphorus"),
+                    weight: 1,
+                    minY: 20,
+                    maxY: 100
+                }
+            ]
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("phosphosiderite"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
 
     // Final Builder loop
     veins.forEach(entry => {

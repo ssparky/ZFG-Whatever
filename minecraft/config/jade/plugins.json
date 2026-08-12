@@ -144,6 +144,11 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "shetiphiancore": {
+    "hud.rgb16": true,
+    "hud": true,
+    "hud.redstone": true
+  },
   "twilightforest": {
     "quest_ram_wool": true
   },
@@ -156,5 +161,8 @@
   },
   "gravestone": {
     "grave": true
+  },
+  "multibeds": {
+    "hud": true
   }
 }

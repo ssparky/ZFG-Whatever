@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("ammonium_oxalate").dust().iconSet(GTMaterialIconSet.FINE).color(0xFFFFFF).secondaryColor(0x81AF78).flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("2x ammonium", "2x carbon", "4x oxygen") 
     event.create("ree_oxalate_mix").dust().iconSet(GTMaterialIconSet.DULL).color(0xD8D8D8).secondaryColor(0x929560).flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create("ree_oxide_mix").dust().iconSet(GTMaterialIconSet.FINE).color(0xDAB98E).secondaryColor(0x6F6941).flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    event.create("tantalum_pentoxide").dust().iconSet(GTMaterialIconSet.FINE).color(0x5F4FA8).secondaryColor(0x272041).flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("2x tantalum", "5x oxygen")
+    event.create("tantalum_pentoxide").dust().iconSet(GTMaterialIconSet.FINE).color(0x5F4FA8).secondaryColor(0x272041).flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("2x tantalum", "5x oxygen") // Temp decomp until Nb/Ta line setup
     event.create("yttria").dust().iconSet(GTMaterialIconSet.FINE).color(0xF1FBCB).secondaryColor(0x96A582).flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("2x yttrium", "3x oxygen")
     event.create("scandia").dust().iconSet(GTMaterialIconSet.FINE).color(0xC4FFC2).secondaryColor(0x3F5D43).flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("2x scandium", "3x oxygen")
     event.create("ree_nitrate_solution").fluid().iconSet(GTMaterialIconSet.DULL).color(0xE5E977).secondaryColor(0x6A7D56).flags(GTMaterialFlags.DISABLE_DECOMPOSITION)

@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     // Nichrome
     event.remove({id: "gtceu:assembler/coil_nichrome"})
     event.recipes.gtceu.assembler("kubejs:coil_nichrome")
-        .itemInputs("8x gtceu:nichrome_double_wire", "8x gtceu:stainless_steel_foil", "16x gtceu:graphite_dust")
+        .itemInputs("8x gtceu:nichrome_double_wire", "8x gtceu:stainless_steel_foil", "16x gtceu:beryllium_oxide_foil")
         .inputFluids("gtceu:aluminium 144")
         .itemOutputs("gtceu:nichrome_coil_block")
         .duration(20*20)
