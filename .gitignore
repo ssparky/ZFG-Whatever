@@ -22,5 +22,6 @@ xaero/
 XaeroWaypoints_BACKUP*/
 
 # Misc loose files
-minecraft\hs_err_pid17476.log
-minecraft\hs_err_pid18692.log
+minecraft/hs_err_pid17476.log
+minecraft/hs_err_pid18692.log
+minecraft/options.txt

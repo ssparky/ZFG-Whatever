@@ -195,4 +195,43 @@ ServerEvents.recipes(event => {
         .circuit(16)
         .duration(480)
         .EUt(7)
+
+    // Lower extrusion tier for primitive alloys to LV (melting recipes would be more ideal but hey what can you do)
+    const tinkerParts = [
+        ["repair_kit", 2],
+        ["pick_head", 2],
+        ["small_axe_head", 2],
+        ["small_blade", 2],
+        ["adze_head", 2],
+        ["hammer_head", 8],
+        ["broad_axe_head", 8],
+        ["broad_blade", 8],
+        ["large_plate", 4],
+        ["tool_handle", 1],
+        ["tool_binding", 1],
+        ["tough_handle", 3],
+        ["tough_binding", 3],
+        ["bow_limb", 2],
+        ["bow_grip", 2]
+    ]
+
+    const tinkerMats = [
+        ["sterling_silver", 98],
+        ["damascus_steel", 56],
+        ["red_steel", 75],
+        ["blue_steel", 69],
+        ["wrought_iron", 56]
+    ]
+
+    tinkerMats.forEach(mat => {
+        tinkerParts.forEach(part => {
+            event.remove({id:`gm_construct:extruder/extrude_${mat[0]}_to_${part[0]}`})
+            event.recipes.gtceu.extruder(`kubejs:tcon/extrude_${mat[0]}_to_${part[0]}`)
+                .itemInputs(`${part[1]}x gtceu:${mat[0]}_ingot`)
+                .notConsumable(`tconstruct:${part[0]}_cast`)
+                .itemOutputs(Item.of(`tconstruct:${part[0]}`, `{Material:"gm_construct:${mat[0]}"}`).strongNBT())
+                .duration(20*mat[1]*part[1])
+                .EUt(GTValues.VA[GTValues.LV])
+        })
+    })
 })

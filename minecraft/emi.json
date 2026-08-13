@@ -54,19 +54,139 @@
         "id": "gtceu:impure_molten_ardite",
         "amount": 0
       }
-    },
-    {
-      "stack": "item:gtceu:magnesium_chloride_dust"
-    },
-    {
-      "stack": {
-        "type": "fluid",
-        "id": "gtceu:butadiene",
-        "amount": 100
-      }
     }
   ],
   "lookup_history": [
+    "item:tconstruct:broad_axe_head{Material:\"gm_construct:red_steel\"}",
+    "item:gtceu:lv_extruder",
+    "item:tconstruct:small_blade{Material:\"gm_construct:sterling_silver\"}",
+    {
+      "type": "item",
+      "id": "gtceu:sterling_silver_ingot",
+      "amount": 2
+    },
+    "item:tconstruct:small_axe_head{Material:\"gm_construct:sterling_silver\"}",
+    "item:tconstruct:repair_kit{Material:\"gm_construct:sterling_silver\"}",
+    "item:tconstruct:tool_handle{Material:\"gm_construct:sterling_silver\"}",
+    "item:tconstruct:tool_handle{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:tool_handle{Material:\"gm_construct:wrought_iron\"}",
+    "item:tconstruct:tool_handle{Material:\"gm_construct:red_steel\"}",
+    "item:tconstruct:tool_handle{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:bow_grip{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:bow_limb{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:tough_binding{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:tough_handle{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:tool_binding{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:large_plate{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:broad_blade{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:broad_axe_head{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:hammer_head{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:adze_head{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:small_axe_head{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:pick_head{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:repair_kit{Material:\"gm_construct:blue_steel\"}",
+    "item:tconstruct:bow_grip{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:bow_limb{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:tough_binding{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:repair_kit{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:red_steel\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:fiery\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:knightmetal\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:blazing_bone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:manyullyn\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:hepatizon\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:queens_slime\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:cinderslime\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:steel\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:cobalt\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:steeleaf\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:plated_slimewood\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:pewter\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:necronium\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:invar\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:constantan\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:bronze\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:electrum\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:rose_gold\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:pig_iron\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:nahuatl\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:amethyst_bronze\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:slimesteel\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:whitestone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:scorched_stone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:necrotic_bone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:silver\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:lead\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:wrought_iron\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:vanadium_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:ultimet\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:tungsten_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:tungsten_carbide\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:treated_wood\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:titanium\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:stainless_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:scandium_yttrium_ytterbium\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:osmium\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:neutronium\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:naquadah_alloy\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:hsse\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:ironwood\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:duranium\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:damascus_steel\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:cobalt_brass\"}",
+    "item:tconstruct:small_blade{Material:\"gm_construct:aluminium\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:slimewood\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:venombone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:seared_stone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:iron\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:chorus\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:copper\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:bone\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:flint\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:rock\"}",
+    "item:tconstruct:small_blade{Material:\"tconstruct:wood\"}",
+    {
+      "type": "fluid",
+      "id": "gtceu:copper",
+      "amount": 25872
+    },
+    {
+      "type": "item",
+      "id": "the_bumblezone:bee_stinger",
+      "amount": 3
+    },
+    "item:tconstruct:seared_lamp",
+    "item:tconstruct:smeltery_controller",
+    "item:tconstruct:seared_drain",
+    "item:tconstruct:seared_fuel_gauge",
+    "item:tconstruct:seared_fuel_tank",
+    "item:tconstruct:seared_chute",
+    "item:tconstruct:seared_bricks",
+    "#item:tconstruct:seared_blocks",
+    "item:tconstruct:nether_grout",
+    "item:bountifulbaubles:vampiric_glove",
+    "item:tconstruct:flint_and_brick{Damage:0,tic_broken:0b,tic_modifiers:[{level:1,name:\"tconstruct:firestarter\"},{level:1,name:\"tconstruct:fiery\"},{level:1,name:\"tconstruct:scorching\"}],tic_persistent:{},tic_stats:{\"tconstruct:durability\":100.0f},tic_volatile_data:{upgrades:1}}",
+    "item:minecraft:flint_and_steel{Damage:0}",
+    "item:rechiseled:chisel",
+    {
+      "type": "item",
+      "id": "gtceu:treated_wood_planks",
+      "amount": 64
+    },
+    "item:gtceu:bronze_rod",
+    "item:gtceu:long_bronze_rod",
+    "item:gtceu:bronze_plate",
+    "item:gtceu:bronze_drum",
+    "item:productivebees:sturdy_bee_cage",
+    "item:tconstruct:repair_kit{Material:\"gm_construct:wrought_iron\"}",
+    "item:toolbelt:belt",
+    "item:gtceu:treated_wood_large_fluid_pipe",
+    "item:gtceu:lp_steam_solid_boiler",
+    "item:waterframes:frame",
+    "item:natures_spirit:coconut_leaves",
+    "item:minecraft:crafting_table",
+    "item:tconstruct:crafting_station",
     "item:gtceu:crushed_agardite_dy_ore",
     "item:gtceu:crushed_zircon_ore",
     "item:gtceu:crushed_burgessite_ore",
@@ -112,8 +232,6 @@
       "id": "gtceu:coke_oven_brick",
       "amount": 64
     },
-    "item:gtceu:bronze_plate",
-    "item:gtceu:lp_steam_solid_boiler",
     {
       "type": "item",
       "id": "gtceu:primitive_pump",
@@ -121,7 +239,6 @@
     },
     "item:minecraft:cobblestone_slab",
     "item:gtceu:wood_large_fluid_pipe",
-    "item:gtceu:treated_wood_planks",
     "item:gtceu:iron_ring",
     "item:gtceu:iron_rod",
     "item:gtceu:iron_bolt",
@@ -184,18 +301,14 @@
     "item:tconstruct:pick_head_cast",
     "item:tconstruct:ingot_cast",
     "item:tconstruct:seared_melter",
-    "item:tconstruct:seared_fuel_gauge",
     [
       "item:tconstruct:seared_fuel_gauge",
       "item:tconstruct:seared_ingot_gauge"
     ],
     "item:tconstruct:seared_heater",
-    "item:tconstruct:smeltery_controller",
-    "item:tconstruct:seared_fuel_tank",
     "item:twilightforest:ironwood_ingot",
     "item:twilightforest:raw_ironwood",
     "item:minecraft:raw_iron",
-    "item:natures_spirit:coconut_leaves",
     {
       "type": "item",
       "id": "natures_spirit:coconut_thatch",
@@ -258,15 +371,12 @@
     "item:placeablemaxwell:mars",
     "item:placeablemaxwell:valenok",
     "item:placeablemaxwell:maxwell",
-    "item:tconstruct:crafting_station",
     "item:tconstruct:repair_kit{Material:\"gm_construct:neutronium\"}",
     "item:tconstruct:pattern",
     "item:tconstruct:tinker_station",
     "item:tconstruct:part_builder",
-    "item:tconstruct:repair_kit{Material:\"gm_construct:blue_steel\"}",
     "item:tconstruct:pick_head{Material:\"tconstruct:slimewood\"}",
     "item:tconstruct:pick_head{Material:\"tconstruct:necrotic_bone\"}",
-    "item:minecraft:crafting_table",
     "item:sophisticatedbackpacks:crafting_upgrade",
     "item:minecraft:oak_fence",
     "item:tconstruct:modifier_worktable",
@@ -1810,7 +1920,7 @@
     "item:gtceu:assembly_line_casing",
     "item:natures_spirit:gray_chalk",
     "item:minecraft:pufferfish{display:{Name:\u0027{\"italic\":false,\"extra\":[{\"translate\":\"item.minecraft.pufferfish\"},{\"text\":\"\\\\\"\"}],\"text\":\"\\\\\"\"}\u0027}}",
-    "#item:starcatcher:bucketable_fishes",
+    "#item:starcatcher:starcaught_fishes",
     "item:starcatcher:cooked_starcaught_fish",
     "item:starcatcher:black_eel",
     "item:twilightforest:experiment_115",
@@ -1884,14 +1994,12 @@
     "item:extendedfeatures:lv_universal_circuit",
     "item:shrink:shrinking_device",
     "item:toolbelt:pouch",
-    "item:toolbelt:belt",
     "item:gtceu:gallium_arsenide_dust",
     "item:gtceu:gallium_arsenide_ingot",
     "item:gtceu:steel_dust",
     "item:gtceu:damascus_steel_dust",
     "item:gtceu:bismuth_bronze_dust",
     "item:gtceu:bismuth_bronze_ingot",
-    "item:gtceu:sterling_silver_ingot",
     "item:gtceu:sterling_silver_dust",
     {
       "type": "fluid",
@@ -1908,8 +2016,6 @@
     "item:gtceu:bronze_ingot",
     "item:gtceu:mv_emitter",
     "item:tconstruct:broad_blade{Material:\"gm_construct:sterling_silver\"}",
-    "item:tconstruct:small_blade{Material:\"gm_construct:titanium\"}",
-    "item:tconstruct:small_blade{Material:\"tconstruct:rose_gold\"}",
     "item:tconstruct:rose_gold_ingot",
     "item:minecraft:ice",
     "item:gtceu:computer_monitor_cover",
@@ -2063,162 +2169,21 @@
       "type": "item",
       "id": "gtceu:hastelloy_x_rod",
       "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "gtceu:hastelloy_x_frame",
-      "amount": 8
-    },
-    {
-      "type": "item",
-      "id": "gtceu:stainless_steel_gearbox",
-      "amount": 2
-    },
-    "item:gtceu:iv_mixer",
-    "item:gtceu:large_distillery",
-    {
-      "type": "item",
-      "id": "gtceu:watertight_casing",
-      "amount": 36
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:phosphoryl_chloride",
-      "amount": 1000
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:butyraldehyde",
-      "amount": 1000
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:phosphorus_trichloride",
-      "amount": 2000
-    },
-    {
-      "type": "item",
-      "id": "gtceu:ferrocene_dust",
-      "amount": 3
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:butene",
-      "amount": 0
-    },
-    "item:gtceu:coke_dust",
-    "item:gtceu:tungstenite_dust",
-    {
-      "type": "item",
-      "id": "gtceu:rhenium_dioxide_dust",
-      "amount": 12
-    },
-    {
-      "type": "item",
-      "id": "gtceu:impure_molybdenum_trioxide_dust",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "gtceu:ammonium_orthomolybdate_dust",
-      "amount": 30
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:sulfuric_copper_solution",
-      "amount": 1000
-    },
-    "item:gtceu:purified_majindeite_ore",
-    "item:gtceu:crushed_majindeite_ore",
-    "item:gtceu:crude_palladium_residue_dust",
-    {
-      "type": "fluid",
-      "id": "gtceu:liquid_ender_air",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:liquid_nether_air",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:biomass",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:fermented_biomass",
-      "amount": 0
-    },
-    {
-      "type": "item",
-      "id": "gtceu:crushed_rippite_ore",
-      "amount": 2
-    },
-    "item:gtceu:raw_rippite",
-    "item:gtceu:rippite_ore",
-    "item:gtceu:refined_samarskite_y_ore",
-    "item:gtceu:crushed_samarskite_y_ore",
-    "item:gtceu:purified_samarskite_y_ore",
-    "item:gtceu:raw_samarskite_y",
-    "item:gtceu:samarskite_y_dust",
-    "item:gtceu:purified_dzhezkazganite_ore",
-    {
-      "type": "item",
-      "id": "gtceu:platinum_group_sludge_dust",
-      "amount": 2
-    },
-    {
-      "type": "fluid",
-      "id": "gtceu:telluric_copper_solution",
-      "amount": 1000
-    },
-    "item:gtceu:purified_tarkianite_ore",
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:obsidian\"}}",
-      "amount": 3
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:coal\"}}",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:experience\"}}",
-      "amount": 5
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:ender\"}}",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:copper\"}}",
-      "amount": 3
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:redstone\"}}",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "productivebees:configurable_comb",
-      "nbt": "{EntityTag:{type:\"productivebees:magmatic\"}}",
-      "amount": 9
     }
   ],
   "craft_history": [
+    "tconstruct:smeltery/seared/fuel_tank",
+    "tconstruct:smeltery/seared/drain",
+    "minecraft:kjs/rechiseled_chisel",
+    "gtceu:shaped/bronze_drum",
+    "gtceu:shaped/stick_long_stick_bronze",
+    "gtceu:shaped/stick_bronze",
+    "gtceu:shaped/plate_bronze",
+    "toolbelt:belt",
+    "gtceu:shaped/large_treated_wooden_pipe",
+    "gtceu:shaped/steam_boiler_coal_bronze",
+    "minecraft:bricks",
+    "minecraft:furnace",
     "gtceu:shaped/pump_hatch",
     "gtceu:shaped/large_wooden_pipe",
     "gtceu:shaped/screw_iron",
@@ -2886,7 +2851,6 @@
     "gtceu:shapeless/kanthal_wire_wire_gt_single_doubling",
     "gtceu:bender/bend_aluminium_ingot_to_foil",
     "gtceu:assembler/furnace",
-    "minecraft:furnace",
     "gtceu:shaped/multi_furnace",
     "gtceu:wiremill/mill_gold_wire",
     "gtceu:assembler/cover_gold_wire_gt_single_rubber",
@@ -3103,7 +3067,6 @@
     "gtceu:shaped/plate_steel",
     "gtceu:shaped/steam_alloy_smelter_bronze",
     "gtceu:shaped/bronze_bricks_hull",
-    "gtceu:shaped/plate_bronze",
     "gtceu:shapeless/dust_bronze",
     "gtceu:shaped/wood_tank_valve",
     "gtceu:shaped/rotor_copper",
@@ -3114,7 +3077,6 @@
     "gtceu:shaped/soft_mallet_wood",
     "gtceu:shaped/steam_boiler_solar_steel",
     "gtceu:shaped/steel_bricks_hull",
-    "minecraft:bricks",
     "gtceu:shaped/plate_silver",
     "gtceu:shaped/small_steel_pipe",
     "sophisticatedstorage:basic_tier_upgrade",
@@ -3142,28 +3104,28 @@
   ],
   "recipe_defaults": {
     "added": [
-      "gtceu:wiremill/mill_tin_wire",
-      "gtceu:bender/bend_copper_ingot_to_foil",
-      "gtceu:extractor/extract_glass",
-      "gtceu:wiremill/mill_red_alloy_wire",
-      "gtceu:assembler/basic_circuit_board",
-      "gtceu:lathe/lathe_brass_to_rod",
-      "gtceu:compressor/compress_plate_dust_wood",
-      "gtceu:lathe/lathe_invar_to_rod",
-      "gtceu:macerator/macerate_glass",
-      "gtceu:bender/bend_steel_to_plate",
       "gtceu:wiremill/mill_copper_wire",
-      "gtceu:shaped/small_dust_assembling_samarium_nitrate",
-      "gtceu:bender/bend_wrought_iron_to_plate",
-      "gtceu:lathe/lathe_iron_to_rod",
-      "gtceu:wiremill/mill_copper_wire_fine",
-      "gtceu:extractor/extract_red_alloy_ingot",
-      "gtceu:assembler/phenolic_board",
       "gtceu:lathe/lathe_steel_to_rod",
+      "gtceu:macerator/macerate_glass",
       "gtceu:wiremill/mill_silver_wire",
+      "gtceu:lathe/lathe_invar_to_rod",
+      "gtceu:compressor/compress_plate_dust_wood",
+      "gtceu:bender/bend_wrought_iron_to_plate",
+      "gtceu:assembler/basic_circuit_board",
       "gtceu:bender/bend_invar_to_plate",
+      "gtceu:shaped/small_dust_assembling_samarium_nitrate",
+      "gtceu:assembler/phenolic_board",
+      "gtceu:bender/bend_steel_to_plate",
+      "gtceu:wiremill/mill_copper_wire_fine",
+      "gtceu:lathe/lathe_brass_to_rod",
+      "gtceu:wiremill/mill_red_alloy_wire",
+      "gtceu:extractor/extract_red_alloy_ingot",
       "gtceu:polarizer/polarize_iron_rod",
-      "gtceu:assembler/assemble_invar_frame"
+      "gtceu:lathe/lathe_iron_to_rod",
+      "gtceu:bender/bend_copper_ingot_to_foil",
+      "gtceu:assembler/assemble_invar_frame",
+      "gtceu:wiremill/mill_tin_wire",
+      "gtceu:extractor/extract_glass"
     ],
     "tags": {
       "#item:forge:dusts/certus_quartz": "item:ae2:certus_quartz_dust",

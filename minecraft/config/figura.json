@@ -6,5 +6,6 @@
   "action_wheel_button": "key.keyboard.y",
   "has_paperdoll": true,
   "paperdoll_always_on": true,
+  "popup_button": "key.keyboard.unknown",
   "default_permission_level": 3
 }
