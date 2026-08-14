@@ -1,0 +1,36 @@
+{
+  "components": [
+    [
+      "gtceu:green_steel",
+      5
+    ],
+    [
+      "gtceu:rubidium",
+      4
+    ],
+    [
+      "gtceu:tin_alloy",
+      16
+    ],
+    [
+      "gtceu:bismuth",
+      12
+    ],
+    [
+      "gtceu:indium",
+      8
+    ],
+    [
+      "gtceu:neutronium",
+      20
+    ],
+    [
+      "gtceu:germanium",
+      6
+    ],
+    [
+      "gtceu:tellurium",
+      4
+    ]
+  ]
+}

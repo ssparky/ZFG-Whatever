@@ -1,0 +1,147 @@
+{
+  "contents": [
+    {
+      "type": "atom",
+      "index": 0,
+      "x": 0.8660254,
+      "y": 0.5,
+      "element": "O",
+      "above": "+"
+    },
+    {
+      "type": "atom",
+      "index": 1,
+      "x": 0,
+      "y": 0,
+      "element": "H"
+    },
+    {
+      "type": "atom",
+      "index": 2,
+      "x": 1,
+      "y": -0.35,
+      "element": "H"
+    },
+    {
+      "type": "atom",
+      "index": 3,
+      "x": 1.4,
+      "y": 0.25,
+      "element": "H"
+    },
+
+    {
+      "type": "bond",
+      "a": 0,
+      "b": 1
+    },
+    {
+      "type": "bond",
+      "a": 0,
+      "b": 2,
+      "lines": ["outward"]
+    },
+    {
+      "type": "bond",
+      "a": 0,
+      "b": 3,
+      "lines": ["inward"]
+    },
+    {
+      "type": "parens",
+      "atoms": [0, 1, 2, 3],
+      "sub": "2"
+    },
+
+    {
+      "type": "atom",
+      "index": 5,
+      "x": 4,
+      "y": 0,
+      "element": "Si"
+    },
+    {
+      "type": "atom",
+      "index": 6,
+      "x": 4.8660254,
+      "y": 0.5,
+      "element": "F"
+    },
+    {
+      "type": "atom",
+      "index": 7,
+      "x": 4.8660254,
+      "y": -0.5,
+      "element": "F"
+    },
+    {
+      "type": "atom",
+      "index": 8,
+      "x": 3.1339746,
+      "y": 0.5,
+      "element": "F"
+    },
+    {
+      "type": "atom",
+      "index": 9,
+      "x": 3.1339746,
+      "y": -0.5,
+      "element": "F"
+    },
+    {
+      "type": "atom",
+      "index": 10,
+      "x": 4,
+      "y": 1.5,
+      "element": "F"
+    },
+    {
+      "type": "atom",
+      "index": 11,
+      "x": 4,
+      "y": -1.5,
+      "element": "F"
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 6,
+      "lines": ["inward"]
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 7,
+      "lines": ["outward"]
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 8,
+      "lines": ["inward"]
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 9,
+      "lines": ["outward"]
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 10,
+      "lines": ["solid"]
+    },
+    {
+      "type": "bond",
+      "a": 5,
+      "b": 11,
+      "lines": ["solid"]
+    },
+    {
+      "type": "parens",
+      "atoms": [5,6,7,8,9,10,11],
+      "sup": "2-"
+    }
+  ]
+}

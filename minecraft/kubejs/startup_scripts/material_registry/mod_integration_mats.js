@@ -117,4 +117,29 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(plate, rod, ring, round, rotor, gear, dense_plate, wire_fine, foil)
         .blastTemp(1900, "low", GTValues.VHA[GTValues.MV], 400)
         .cableProperties(GTValues.V[GTValues.HV], 6, 1, false)
+
+    // Thermal
+    // Tree tapping fluids
+    event.create("tree_resin").fluid().color(0xB58025).flags(disable_decomp)
+    event.create("tree_oil").fluid().color(0xE2C187).flags(disable_decomp)
+    event.create("tree_sap").fluid().color(0x9C6506).flags(disable_decomp)
+    event.create("tree_latex").fluid().color(0xEFE1C9).flags(disable_decomp)
+    event.create("tree_essential_oil").fluid().color(0x87785D).flags(disable_decomp)
+    // Specialized
+    event.create("tree_sap_maple").fluid().color(0x815200).flags(disable_decomp)
+    event.create("tree_latex_rubber").fluid().color(0xC4B59C).flags(disable_decomp)
+    event.create("tree_resin_pine").fluid().color(0xCF8F20).flags(disable_decomp)
+    // Downstream
+    event.create("turpentine").fluid().color(0xEB9F1C).flags(disable_decomp)
+    event.create("pinene").fluid().color(0xD6B987).components("10x carbon", "16x hydrogen")
+    event.create("carene").fluid().color(0x939A6E).components("10x carbon", "16x hydrogen")
+    event.create("camphene").fluid().color(0xC9C0B1).components("10x carbon", "16x hydrogen")
+    event.create("limonene").fluid().color(0xD6EF73).components("10x carbon", "16x hydrogen")
+    event.create("terpinolene").fluid().color(0xAC8E5B).components("10x carbon", "16x hydrogen")
+    event.create("cymene").fluid().color(0x93634E).components("10x carbon", "14x hydrogen").formula("CH3C6H4CH(CH3)2")
+
+    event.create("rosin").dust().color(0x9C6506).flags(disable_decomp).burnTime(400)
+    event.create("abietic_acid").fluid().color(0x9C6506).components("20x carbon", "30x hydrogen", "2x oxygen")
+
+
 })

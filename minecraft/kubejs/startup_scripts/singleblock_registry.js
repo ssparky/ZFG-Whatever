@@ -30,6 +30,14 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         // .setProgressBar(MoniGuiTextures.PROGRESS_BAR_RECONSTRUCTION, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+
+    event.create("tapping")
+        .category("tapping")
+        .setEUIO("in")
+        .setMaxIOSize(2, 1, 1, 2)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRUDER, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CUT)
 })
 
 // Singleblock machines
@@ -59,6 +67,23 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .langValue(`${GTValues.VLVH[tier]} Polymerization Chamber`)
                 .recipeType("polymerization")
                 .workableTieredHullModel("gtceu:block/machines/polymerizer")
+        )
+
+    // event.create("steam_tree_tap", "steam") // Steam machines can't handle fluids at all :(
+    //     .hasHighPressure(true)
+    //     .definition((hp, builder) =>
+    //         builder
+    //             .recipeType("tapping")
+    //             .workableSteamHullModel(hp, "gtceu:block/machines/tree_tap")
+    //     )
+
+    event.create("tree_tap", "simple")
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV, GTValues.OpV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Tree Tap`)
+                .recipeType("tapping")
+                .workableTieredHullModel("gtceu:block/machines/tree_tap")
         )
 })
 
