@@ -68,7 +68,7 @@ GTCEuServerEvents.oreVeins(event => {
         },
         indicator: {
             surfaceRock: GTMaterials.get("cylindrite"),
-            placement: "above",
+            placement: "below",
             density: 0.2,
             radius: 5
         }
@@ -352,6 +352,64 @@ GTCEuServerEvents.oreVeins(event => {
         },
         indicator: {
             surfaceRock: GTMaterials.get("carbonado"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
+    registerOreVein("otherside/bismuth_sulfochloride", {
+        weight: 28,
+        clusterSize: 90,
+        density: 0.99,
+        layer: "otherside",
+        dimensions: [
+            "deeperdarker:otherside"
+        ],
+        heightRange: {
+            type: "triangle",
+            min: 20,
+            max: 82
+        },
+        generator: {
+            type: "veined",
+            oreBlocks: [
+                {
+                    material: GTMaterials.get("bismuthinite"),
+                    weight: 5
+                },
+                {
+                    material: GTMaterials.get("demicheleite_cl"),
+                    weight: 4
+                },
+                {
+                    material: GTMaterials.get("demicheleite_br"),
+                    weight: 2
+                },
+                {
+                    material: GTMaterials.get("aiolosite"),
+                    weight: 3
+                }
+            ],
+            rareBlocks: [
+                {
+                    material: GTMaterials.get("demicheleite_i"),
+                    weight: 3
+                },
+                {
+                    material: GTMaterials.get("tazieffite"),
+                    weight: 1
+                }
+            ],
+            rareBlockChance: 0.81,
+            veininessThreshold: 0.1,
+            maxRichnessThreshold: 0.3,
+            minRichness: 0.75,
+            maxRichness: 0.92,
+            edgeRoundoffBegin: 10,
+            maxEdgeRoundoff: 0.2
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("demicheleite_cl"),
             placement: "above",
             density: 0.2,
             radius: 5

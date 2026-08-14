@@ -880,7 +880,7 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
-    registerOreVein("overworld/lithium", {
+    registerOreVein("overworld/phosphosiderite", {
         weight: 40,
         clusterSize: 85,
         density: 0.66,

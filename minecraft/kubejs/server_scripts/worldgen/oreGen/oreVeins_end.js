@@ -318,6 +318,62 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
+    registerOreVein("end/taaffeite", {
+        weight: 29,
+        clusterSize: 71,
+        density: 0.56,
+        layer: "endstone",
+        dimensions: [
+            "minecraft:the_end"
+        ],
+        heightRange: {
+            type: "triangle",
+            min: 0,
+            max: 90
+        },
+        generator: {
+            type: "dike",
+            blocks: [
+                {
+                    material: GTMaterials.get("magnesiotaaffeite_2n2s"),
+                    weight: 5,
+                    minY: 0,
+                    maxY: 90
+                },
+                {
+                    material: GTMaterials.get("magnesiotaaffeite_6n3s"),
+                    weight: 4,
+                    minY: 0,
+                    maxY: 90
+                },
+                {
+                    material: GTMaterials.get("stottite"),
+                    weight: 3,
+                    minY: 0,
+                    maxY: 90
+                },
+                {
+                    material: GTMaterials.get("natanite"),
+                    weight: 3,
+                    minY: 0,
+                    maxY: 90
+                },
+                {
+                    material: GTMaterials.get("foordite"),
+                    weight: 2,
+                    minY: 0,
+                    maxY: 90
+                }
+            ]
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("magnesiotaaffeite_2n2s"),
+            placement: "below",
+            density: 0.2,
+            radius: 5
+        }
+    })
+
     // Final Builder loop
     veins.forEach(entry => {
         buildVein(

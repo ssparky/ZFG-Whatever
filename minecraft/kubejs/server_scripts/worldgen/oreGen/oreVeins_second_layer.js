@@ -603,6 +603,67 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
+    registerOreVein("second_layer/bismuth_sulfosalts", {
+        weight: 31,
+        clusterSize: 89,
+        density: 0.81,
+        layer: "second_layer",
+        dimensions: [
+            "infinite_abyss:second_layer"
+        ],
+        heightRange: {
+            type: "triangle",
+            min: 13,
+            max: 68
+        },
+        generator: {
+            type: "dike",
+            blocks: [
+                {
+                    material: GTMaterials.get("cuprobismutite"),
+                    weight: 5,
+                    minY: 13,
+                    maxY: 68
+                },
+                {
+                    material: GTMaterials.get("eskimoite"),
+                    weight: 4,
+                    minY: 13,
+                    maxY: 45
+                },
+                {
+                    material: GTMaterials.get("muckeite"),
+                    weight: 3,
+                    minY: 29,
+                    maxY: 68
+                },
+                {
+                    material: GTMaterials.get("proudite"),
+                    weight: 3,
+                    minY: 13,
+                    maxY: 60
+                },
+                {
+                    material: GTMaterials.get("hansblockite"),
+                    weight: 2,
+                    minY: 13,
+                    maxY: 41
+                },
+                {
+                    material: GTMaterials.get("kudriavite"),
+                    weight: 2,
+                    minY: 19,
+                    maxY: 62
+                }
+            ]
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("cuprobismutite"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
 
     // Final Builder loop
     veins.forEach(entry => {

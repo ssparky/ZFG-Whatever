@@ -668,6 +668,119 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
+    registerOreVein("first_layer/spinel", {
+        weight: 50,
+        clusterSize: 105,
+        density: 0.94,
+        layer: "first_layer",
+        dimensions: [
+            "infinite_abyss:first_layer"
+        ],
+        heightRange: {
+            type: "uniform",
+            min: 50,
+            max: 120
+        },
+        generator: {
+            type: "veined",
+            oreBlocks: [
+                {
+                    material: GTMaterials.get("spinel"),
+                    weight: 5
+                },
+                {
+                    material: GTMaterials.get("chrysoberyl"),
+                    weight: 4
+                },
+                {
+                    material: GTMaterials.get("cuprospinel"),
+                    weight: 3
+                }
+            ],
+            rareBlocks: [
+                {
+                    material: GTMaterials.get("ceylonite"),
+                    weight: 3
+                },
+                {
+                    material: GTMaterials.get("cymophane"),
+                    weight: 2
+                },
+                {
+                    material: GTMaterials.get("alexandrite"),
+                    weight: 1
+                }
+            ],
+            rareBlockChance: 0.65,
+            veininessThreshold: 0.1,
+            maxRichnessThreshold: 0.3,
+            minRichness: 0.35,
+            maxRichness: 0.75,
+            edgeRoundoffBegin: 10,
+            maxEdgeRoundoff: 0.2
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("spinel"),
+            placement: "below",
+            density: 0.2,
+            radius: 5
+        }
+    })
+    registerOreVein("first_layer/bismuth_sulfide", {
+        weight: 29,
+        clusterSize: 45,
+        density: 0.55,
+        layer: "first_layer",
+        dimensions: [
+            "infinite_abyss:first_layer"
+        ],
+        heightRange: {
+            type: "uniform",
+            min: 0,
+            max: 70
+        },
+        generator: {
+            type: "layered",
+            layers: [
+                {
+                    weight: 5,
+                    material: GTMaterials.get("bismuthinite"),
+                    minSize: 2,
+                    maxSize: 4
+                },
+                {
+                    weight: 3,
+                    material: GTMaterials.get("mozgovaite"),
+                    minSize: 1,
+                    maxSize: 3
+                },
+                {
+                    weight: 3,
+                    material: GTMaterials.get("matildite"),
+                    minSize: 1,
+                    maxSize: 2
+                },
+                {
+                    weight: 2,
+                    material: GTMaterials.get("gladite"),
+                    minSize: 1,
+                    maxSize: 3
+                },
+                {
+                    weight: 2,
+                    material: GTMaterials.get("joseite"),
+                    minSize: 1,
+                    maxSize: 2
+                }
+            ]
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("bismuthinite"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
     // Final Builder loop
     veins.forEach(entry => {
         buildVein(
