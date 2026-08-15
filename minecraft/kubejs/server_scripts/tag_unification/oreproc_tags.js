@@ -81,6 +81,32 @@ ServerEvents.tags("item", event => {
         event.add("gtceu:washedin/butadiene", `gtceu:crushed_${ore}_ore`)
     })
 
+    /** ELECTROMAGNETIC SEP */
+    var separated = [
+        "haitaite_la", "diaspore", "dypingite", "bastnasite", "manganite", "nickel", "umangite", "forsterite", "chrysoprase", "augite", "sinoite", "ilvaite", "ciprianite",
+        "hexaferrum", "golden_sheen_sapphire", "mooihoekite", "carpathite", "pyrite", "ziminaite", "cohenite", "bilibinskite", "idaite", "aluminite", "gadolinite_nd",
+        "majorite", "franconite", "ojuelaite", "cattierite", "monazite", "quintinite", "merenskyite", "antozonite", "rhodochrosite", "yagiite", "haycockite", "ullmannite",
+        "millerite", "fleetite", "brucite", "granitic_mineral_sand", "florenskyite", "wangxibinite", "moabite", "chukanovite", "aragonite", "braggite", "itelmenite",
+        "roquesite", "davidite_la", "tantalcarbide", "davidite_ce", "paddlewheelite", "agate", "violarite", "wakefieldite_nd", "andesine", "rosasite", "klockmannite",
+        "anthoinite", "honessite", "iseite", "frohbergite", "chengdeite", "goshenite", "polydymite", "lindsleyite", "vitimite", "ningyoite", "jamborite", "hauyne",
+        "wakefieldite_y", "niggliite", "anglesite", "cebaite_nd", "lollingite", "arsenopyrite", "honeaite", "gadolinite_y", "leucite", "thalfenisite", "chlorocalcite",
+        "davidite_y", "xingzhongite", "magnetite", "valleriite", "nephrite", "yixunite", "proudite", "coalingite", "cubanite", "grimmite", "jasper", "cebaite_ce",
+        "isomertieite", "roselite", "driekopite", "nisnite", "ilmenite", "bogdanovite", "sampleite", "thortveitite", "maslovite", "calomel", "bianchiniite", "goethite",
+        "tarkianite", "nekrasovite", "rutheniridosmine", "shannonite", "tornroosite", "herkimer_diamond", "wakefieldite_ce", "aquamarine", "dreyerite", "wakefieldite_la",
+        "shortite", "sakhaite", "grammatikopoulosite", "trevorite", "nickolayite", "spriggite", "skaergaardite", "yarlongite", "antitaenite", "euxenite_y", "laurentianite",
+        "tazzoliite", "schaurteite", "selenolaurite", "nuwaite", "vyalsovite", "ferrodimolybdenite", "roxbyite", "cobaltpentlandite", "uakitite", "vanadium_magnetite",
+        "anhydrite", "kuvaevite", "epidote", "clintonite", "ruarsite", "hematite", "anorthoclase", "lazulite", "tin", "patronite", "polarite", "sanidine", "gaotaiite",
+        "clinochrysotile", "wardite", "hexamolybdenum", "charmarite", "rotemite", "kosnarite", "transjordanite", "peridot", "oregonite", "bazirite", "cuprospinel",
+        "chalcomenite", "glauconite_sand", "yellow_limonite", "nullaginite", "melonite", "stannite", "hawleyite", "pentlandite", "heliodor", "mayingite", "ulvospinel",
+        "actinolite", "hansblockite", "algodonite", "arcanite", "stefanweissite", "gadolinite_ce", "vimsite", "nolanite", "hiddenite", "kishonite", "muckeite", "fayalite",
+        "vicanite_ce", "aventurine", "red_beryl", "bixbyite_mn", "xenophyllite", "umbite", "naquadah", "badalovite", "niobocarbide", "cattiite", "juanite", "ceylonite",
+        "chromite", "stichtite", "calaverite", "basaltic_mineral_sand", "berzeliite", "topazolite", "vulcanite"
+    ]
+    separated.forEach(ore => {
+        event.add("gtceu:seperatable", `gtceu:pure_${ore}_dust`)
+        event.add("gtceu:seperatable", `gtceu:purified_${ore}_ore`)
+    })
+
     /** CUSTOM OREPROC */
     // Platline
     var platOres = [

@@ -457,5 +457,9 @@
     "gtceu.fish_shrine.description": "Generates rewards based on your fishing prowess.",
     "block.gtceu.polymer_multi": "Large Polymerization Chamber",
     "block.gtceu.polymer_multi.description": "Provides conditions for monomers to grow into polymers.",
-    "gtceu.polymer_multi.description": "Provides conditions for monomers to grow into polymers."
+    "gtceu.polymer_multi.description": "Provides conditions for monomers to grow into polymers.",
+    "gtceu.ore_digestion": "Ore Digestion",
+    "gtceu.polymerization": "Polymerization",
+    "gtceu.fish_shrine": "Fish Shrine",
+    "gtceu.tapping": "Tree Tapping"
 }
