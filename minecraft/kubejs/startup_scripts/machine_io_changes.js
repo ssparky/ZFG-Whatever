@@ -11,4 +11,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     // Change chemical bath IO (1 items input to 2)
     GTRecipeTypes.CHEMICAL_BATH_RECIPES.setMaxIOSize(2, 6, 1, 1);
+
+    // Change thermal centrifuge IO (0 fluid outputs to 1)
+    GTRecipeTypes.THERMAL_CENTRIFUGE_RECIPES.setMaxIOSize(1,3,0,1);
 });

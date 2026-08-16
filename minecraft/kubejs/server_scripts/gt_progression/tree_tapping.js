@@ -1,24 +1,5 @@
 ServerEvents.recipes(event => {
     /** Tap machine recipes */ 
-    // const steamInputs = [
-    //     ["lp", "gtceu:bronze_brick_casing", "gtceu:bronze_small_fluid_pipe", "gtceu:small_bronze_gear", "minecraft:piston", "gtceu:bronze_plate"],
-    //     ["hp", "gtceu:lp_steam_tree_tap", "gtceu:tin_alloy_small_fluid_pipe", "gtceu:small_steel_gear", "gtceu:steel_plate", "gtceu:wrought_iron_plate"]
-    // ]
-
-    // steamInputs.forEach(tier => {
-    //     event.shaped(`gtceu:${tier[0]}_steam_tree_tap`, [
-    //         "ECE",
-    //         "BAB",
-    //         "EDE"
-    //     ], {
-    //         A: tier[1],
-    //         B: tier[2],
-    //         C: tier[3],
-    //         D: tier[4],
-    //         E: tier[5]
-    //     }).id(`kubejs:craft_${tier[0]}_steam_tree_tap`)
-    // })
-
     const elecInputs = [
         ["lv", "gtceu:tin_single_cable", "gtceu:steel_plate", "gtceu:invar_screw"],
         ["mv", "gtceu:copper_single_cable", "gtceu:aluminium_plate", "gtceu:electrum_screw"],
@@ -239,7 +220,7 @@ ServerEvents.recipes(event => {
             else {
                 tree_recipe.chancedOutput(tree[6], 6500, 0)
             }
-            tree_recipe.duration(600)
+            tree_recipe.duration(1200)
             tree_recipe.EUt(GTValues.VHA[GTValues.ULV])
         })
     })
