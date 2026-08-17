@@ -137,12 +137,12 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:ammonia 2000", "gtceu:chloroplatinic_acid 1000")
         .duration(30).EUt(30)
 
-    event.recipes.gtceu.distillery("distill_chloroplatinic_acid")
+    event.recipes.gtceu.distillation_tower("distill_chloroplatinic_acid")
         .inputFluids("gtceu:chloroplatinic_acid 1000")
         .circuit(1)
         .itemOutputs("3x gtceu:platinum_raw_dust")
         .outputFluids("gtceu:hydrochloric_acid 4000")
-        .duration(120).EUt(30)
+        .duration(120).EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.autoclave("platinum_raw_dust_to_platinum")
         .itemInputs("3x gtceu:platinum_raw_dust", "gtceu:calcium_dust")
