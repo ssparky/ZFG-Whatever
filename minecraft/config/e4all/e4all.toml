@@ -30,7 +30,7 @@ dialtoneRelayMap = "https://natives.e4mc.link/relaymap.json"
 dialtoneSanitizeTicket = true
 # Whether to enable offline mode (disables Microsoft authentication for ALL LAN connections, including both tunneled and direct). Toggle via the 'Online Mode' button on the Open to LAN screen.
 # default: true
-offlineMode = true
+offlineMode = false
 # Whether the offline mode warning has already been shown to the user
 # default: false
 offlineWarningShown = true
