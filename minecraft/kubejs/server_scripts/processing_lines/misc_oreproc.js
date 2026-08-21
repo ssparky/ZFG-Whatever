@@ -1097,6 +1097,13 @@ ServerEvents.recipes(event => {
         .itemInputs("21x gtceu:rhenium_dioxide_dust")
         .itemOutputs("18x gtceu:rhenium_heptoxide_dust", "3x gtceu:rhenium_dust") 
         .duration(440).EUt(GTValues.VHA[GTValues.ZPM]).blastFurnaceTemp(7200)
+    // Misc cleanup for un-decomposable byproduct dusts
+    event.recipes.gtceu.electric_blast_furnace("kubejs:molybdenum_rhenium/cleanup_tarkianite")
+        .itemInputs("26x gtceu:tarkianite_dust")
+        .inputFluids("gtceu:oxygen 54000")
+        .itemOutputs("2x gtceu:cupric_oxide_dust", "15x gtceu:rhenium_dioxide_dust", "12x gtceu:molybdenum_trioxide_dust") // Fe left out, no slots and not important
+        .outputFluids("gtceu:sulfur_dioxide 16000")
+        .duration(540).EUt(GTValues.VA[GTValues.LuV]).blastFurnaceTemp(5500)
 
     // Nb/Ta Line (TODO Eventually)
     var NbTaOres = [
@@ -1123,4 +1130,23 @@ ServerEvents.recipes(event => {
         "torbernite", "przhevalskite", "uramphite", "uranosphathite", "coconinoite", "upalite", "francoisite_nd", "francoisite_ce", "kivuite", "althupite",
         "mundite", "coffinite", "thorite", "enalite", "vicanite", "uranophane", "barronite", "uranosilite", "phosinaite_ce", "ciprianiite", "ekanite", "uroxite"
     ]
+
+    // Nq Line
+    var NaqOres = [
+        "enquedite", "enquedine", "enquedire", "kaemanite_rb", "kaemanite_cs", "kaemanite_ke", "queryl", "quarate", "xenocage"
+    ]
+    // TODO
+    // 45x KeNq4Np2PbGeO29Si6H + 5000mb HBF4 + 36x SbF5 + 6000mb SO2HF2 ||
+    // 6x KeBF4 + 28x NqBF5 + 10x NpF4 + 3x PbF2 + 5x GeF4 + 30x SiF4 + 6x Sb + 6000mb H2SO4 + 67000mb O2 ||
+
+    // Misc digester dusts
+    event.recipes.gtceu.ore_digestion("kubejs:misc_oreproc/digest_aleutite")
+        .itemInputs("152x gtceu:aleutite_dust")
+        .chancedFluidInput("gtceu:hydrochloric_acid", 3000, 0)
+        .chancedFluidInput("gtceu:sulfuric_acid", 3000, 0)
+        .itemOutputs("86x gtceu:cupric_oxide_dust", "32x gtceu:arsenic_trioxide_dust", "28x gtceu:vanadium_pentoxide_dust", "4x gtceu:rock_salt_dust",
+            "2x gtceu:massicot_dust", "2x gtceu:rubidium_chloride_dust", "2x gtceu:caesium_chloride_dust")
+        .chancedFluidOutput("gtceu:diluted_hydrochloric_acid 2000", 3000, 0)
+        .chancedFluidOutput("gtceu:diluted_sulfuric_acid 2000", 3000, 0)
+        .duration(700).EUt(GTValues.VHA[GTValues.EV])
 })

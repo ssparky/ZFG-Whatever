@@ -81,4 +81,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("hydrogen_pentafluorooxyniobate").fluid().iconSet(GTMaterialIconSet.FINE).color(0xD3D1F1).secondaryColor(0x543E7F)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("2x hydrogen", "1x niobium", "5x fluorine", "1x oxygen")
+
+    event.create("rubidium_fluoride").dust().iconSet(GTMaterialIconSet.DULL).color(0xFFC1C1).secondaryColor(0xDB4C4C)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x rubidium", "1x fluorine")
+    event.create("rubidium_chloride").dust().iconSet(GTMaterialIconSet.DULL).color(0xFFDFDF).secondaryColor(0xDB614C)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x rubidium", "1x chlorine")
+    event.create("caesium_fluoride").dust().iconSet(GTMaterialIconSet.DULL).color(0xFFE6C1).secondaryColor(0xDBD94C)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x caesium", "1x fluorine")
+    event.create("caesium_chloride").dust().iconSet(GTMaterialIconSet.DULL).color(0xFAD4B5).secondaryColor(0xF9AD2C)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x caesium", "1x chlorine")
 })

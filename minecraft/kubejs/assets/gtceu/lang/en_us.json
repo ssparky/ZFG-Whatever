@@ -391,6 +391,10 @@
     "material.gtceu.saline_antiseptic": "Saline Antiseptic",
     "material.gtceu.fluorotoluene_mixture": "Fluorotoluene Mixture",
     "material.gtceu.acetylene": "Acetylene",
+    "material.gtceu.rubidium_fluoride": "Rubidium Fluoride",
+    "material.gtceu.rubidium_chloride": "Rubidium Chloride",
+    "material.gtceu.caesium_fluoride": "Caesium Fluoride",
+    "material.gtceu.caesium_chloride": "Caesium Chloride",
 
     "HEADER.RENAME_MATS": "====================================",
     "FILLER.RENAME_MATS": ">>> Renaming existing GT mats/ores <<<",

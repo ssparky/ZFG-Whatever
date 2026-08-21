@@ -207,5 +207,15 @@ ServerEvents.tags("item", event => {
     // Uranium/Thorium line
 
     // Nq Line
+    var NaqOres = [
+        "enquedite", "enquedine", "enquedire", "kaemanite_rb", "kaemanite_cs", "kaemanite_ke", "queryl", "quarate", "xenocage"
+    ]
+
+    NaqOres.forEach(ore => {
+        event.add("gtceu:oreproc", `gtceu:purified_${ore}_ore`)
+        event.add("gtceu:oreproc/naqline", `gtceu:purified_${ore}_ore`)
+        event.add("gtceu:oreproc", `gtceu:${ore}_dust`)
+        event.add("gtceu:oreproc/naqline", `gtceu:${ore}_dust`)
+    })
 
 });
