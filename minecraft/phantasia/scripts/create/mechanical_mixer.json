@@ -1,0 +1,127 @@
+{
+  "machine": "",
+  "startCamera": null,
+  "steps": [
+    {
+      "tick": 0,
+      "caption": "The §6Mechanical Mixer§r processes §eMixing§r recipes. Place a §6Basin§r at the base.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "color": null
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 60,
+      "caption": "Place the §6Mechanical Mixer§r directly above the Basin — it auto-faces down.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 1,
+          "y": 1,
+          "z": 0,
+          "color": null
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 120,
+      "caption": "Supply §aRotational Force§r via a §6Shaft§r connected above the Mixer's casing.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 1,
+          "y": 2,
+          "z": 0,
+          "color": "#44AAFF"
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "z": 0,
+          "color": "#44AAFF"
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 180,
+      "caption": "The Mixer runs as long as it has sufficient speed. Heat the Basin with a §6Blaze Burner§r below for §cHeated§r and §cSuperheated§r recipes.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": true,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [],
+      "blockTransitions": []
+    }
+  ],
+  "scriptDuration": -1,
+  "expandable": false,
+  "recipeId": null,
+  "items": [],
+  "globalMistakes": [],
+  "optionalGroups": []
+}

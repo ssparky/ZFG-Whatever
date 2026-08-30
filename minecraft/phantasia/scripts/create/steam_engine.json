@@ -1,0 +1,164 @@
+{
+  "machine": "",
+  "startCamera": null,
+  "steps": [
+    {
+      "tick": 0,
+      "caption": "The §6Steam Engine§r converts steam into §aRotational Force§r — one of Create's primary power sources.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 3,
+          "y": 0,
+          "z": 0,
+          "color": null
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 60,
+      "caption": "The §6Boiler§r generates steam from §eWater§r (piped in) and §eHeat§r from below (Blaze Burner, Lava, Fire).",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 2,
+          "y": 0,
+          "z": 0,
+          "color": "#FF8800"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "z": 0,
+          "color": "#FF8800"
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 120,
+      "caption": "A §6Fluid Tank§r stores water. Pipe it into the Boiler with §6Fluid Pipes§r.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": false,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "color": "#4488FF"
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "color": "#4488FF"
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "color": "#4488FF"
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "z": 0,
+          "color": "#4488FF"
+        }
+      ],
+      "blockTransitions": []
+    },
+    {
+      "tick": 180,
+      "caption": "Attach a §6Flywheel§r to the engine's output for a passive §aSU bonus§r. Connect your rotational network via §6Shafts§r.",
+      "show": "all",
+      "layer": 0,
+      "layerMin": 0,
+      "layerMax": 0,
+      "positions": [],
+      "hideLayer": -1,
+      "hidePositions": [],
+      "working": true,
+      "fakeRecipeId": null,
+      "hold": null,
+      "layerCount": -1,
+      "showItems": true,
+      "items": [],
+      "worldItems": [],
+      "camera": null,
+      "mistakes": [],
+      "highlights": [
+        {
+          "x": 4,
+          "y": 0,
+          "z": 0,
+          "color": "#AAFFAA"
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "z": 0,
+          "color": "#44AAFF"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "z": 0,
+          "color": "#44AAFF"
+        }
+      ],
+      "blockTransitions": []
+    }
+  ],
+  "scriptDuration": -1,
+  "expandable": false,
+  "recipeId": null,
+  "items": [],
+  "globalMistakes": [],
+  "optionalGroups": []
+}

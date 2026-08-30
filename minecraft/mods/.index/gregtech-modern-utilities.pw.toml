@@ -1,4 +1,4 @@
-filename = 'gtmutils-2.10.1.jar'
+filename = 'gtmutils-2.10.2.jar'
 name = 'GregTech Modern Utilities'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '1bfe96e93be64fd4c631ad3868782c70463bc5962ee447be7aefcab89ecff94500d9bb9c5652e1138929ffda546ec095bf785298020454c535a51d525d82048e'
+hash = '68090fad5b675562c540deb4e11981cffc48cfbc814cfb6b9555224e6dd050d0c88c12a7e56430fec75f1a559da9f2e1c8719274047f6af9c8e5335b9aafa55d'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/KMnOsM3N/versions/uTFyhqal/gtmutils-2.10.1.jar'
+url = 'https://cdn.modrinth.com/data/KMnOsM3N/versions/IyQ8F7M8/gtmutils-2.10.2.jar'
 
 [update.modrinth]
 mod-id = 'KMnOsM3N'
-version = 'uTFyhqal'
+version = 'IyQ8F7M8'

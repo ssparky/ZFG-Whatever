@@ -58,6 +58,16 @@
     "web_info": true,
     "enlarged_me_stocking_bus_info": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,

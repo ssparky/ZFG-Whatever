@@ -1,4 +1,4 @@
-filename = 'mae2-2.0.0.jar'
+filename = 'mae2-2.0.1.jar'
 name = 'Modern AE2 Additions'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '6586022771baae3927d781150febc30ff08152704a6836b32685eb4cbce7df79061f06861cab1c6e7cbd8633c4fd396d51bf5027f16b18bb58685e51100fb66e'
+hash = 'aed263e11940efe20dd44847acb1373d0cb7302f5a6574e17c9b2eb1667337660bf6e8eded8d97be0d3f1290dbdccef3760d4fe3a026932eabae0d2a924fe7e3'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/5G4fpXXj/versions/WIepcqPc/mae2-2.0.0.jar'
+url = 'https://cdn.modrinth.com/data/5G4fpXXj/versions/5vXTRu3V/mae2-2.0.1.jar'
 
 [update.modrinth]
 mod-id = '5G4fpXXj'
-version = 'WIepcqPc'
+version = '5vXTRu3V'

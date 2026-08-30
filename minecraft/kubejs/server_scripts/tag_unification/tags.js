@@ -3,6 +3,9 @@ ServerEvents.tags("item", event => {
     // AE2 SkyStone dust tag
     event.add("forge:dusts/sky_stone", "ae2:sky_dust")
 
+    // Remove violet diamond from common tag to prevent normal diamonds crafting into violet blocks
+    event.remove("c:diamonds", "infinite_abyss:violet_diamond")
+
     // Various gems
     var dupeGems = [
         ["infinite_abyss:violet_diamond", "diamond"],
@@ -102,7 +105,7 @@ ServerEvents.tags("item", event => {
 
         ["allactite", "pink"],["behierite", "pink"],["diaspore", "pink"],["gayite", "pink"],["hackmanite", "pink"],["kunzite", "pink"],
         ["leucite", "pink"],["monazite_nd", "pink"],["morganite", "pink"],["padparadscha", "pink"],["phosphosiderite", "pink"],
-        ["pink_diamond", "pink"],["rose_quartz", "pink"],["schizolite", "pink"],["vayrynenite", "pink"],
+        ["pink_diamond", "pink"],["rose_quartz", "pink"],["schizolite", "pink"],["vayrynenite", "pink"],["pezzottaite_ke", "pink"],
 
         ["anglesite", "gray"],["hydroxylapatite", "gray"],["ilvaite", "gray"],["magnolite", "gray"],["musgravite", "gray"],
         ["wakefieldite_ce", "gray"],
@@ -116,6 +119,7 @@ ServerEvents.tags("item", event => {
 
         ["antozonite", "purple"],["axinite_mg", "purple"],["benitoite", "purple"],["creedite", "purple"],["fluorapatite", "purple"],
         ["hexagonite", "purple"],["putnisite", "purple"],["sugilite", "purple"],["taaffeite", "purple"],["tanzanite", "purple"],
+        ["iodapatite", "purple"],
 
         ["afghanite", "blue"],["agaite", "blue"],["azurite", "blue"],["ceylonite", "blue"],["clinoclase", "blue"],["diaboleite", "blue"],
         ["geuda", "blue"],["hauyne", "blue"],["kinoite", "blue"],["melanite", "blue"],
@@ -123,7 +127,7 @@ ServerEvents.tags("item", event => {
         ["anatase", "brown"],["axinite_fe", "brown"],["bixbyite_fe", "brown"],["chalcedony", "brown"],["corkite", "brown"],["enstatite", "brown"],
         ["hubeite", "brown"],["humite", "brown"],["iranite", "brown"],["modraite", "brown"],["painite", "brown"],["perovskite", "brown"],
         ["retzian_ce", "brown"],["retzian_la", "brown"],["romerite", "brown"],["siderite", "brown"],["smoky_quartz", "brown"],
-        ["stolzite", "brown"],["zirconolite", "brown"],
+        ["stolzite", "brown"],["zirconolite", "brown"], ["bromapatite", "brown"],
 
         ["actinolite", "green"],["carraraite", "green"],["cesiodymite", "green"],["clinochlore", "green"],["cornwallite", "green"],
         ["demantoid", "green"],["euchroite", "green"],["fluorite", "green"],["gadolinite_y", "green"],["goldmanite", "green"],
@@ -133,7 +137,7 @@ ServerEvents.tags("item", event => {
 
         ["brookite", "red"],["cuprite", "red"],["flurlite", "red"],["lorandite", "red"],["manganvesuvianite", "red"],["maxwellite", "red"],
         ["mesaite", "red"],["mozartite", "red"],["pyrargyrite", "red"],["rhodochrosite", "red"],["roselite", "red"],["rubellite", "red"],
-        ["spinel", "red"],["vanadinite", "red"],["villiaumite", "red"],["zircon", "red"],
+        ["spinel", "red"],["vanadinite", "red"],["villiaumite", "red"],["zircon", "red"], ["pezzottaite_rb", "red"],
 
         ["annite", "black"],["bixbyite_mn", "black"],["braunite", "black"],["chambersite", "black"],["kulanite", "black"],["loparite", "black"],
         ["mannardite", "black"],["moroxite", "black"],["voltaite", "black"]

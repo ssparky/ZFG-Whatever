@@ -208,7 +208,8 @@ ServerEvents.tags("item", event => {
 
     // Nq Line
     var NaqOres = [
-        "enquedite", "enquedine", "enquedire", "kaemanite_rb", "kaemanite_cs", "kaemanite_ke", "queryl", "quarate", "xenocage"
+        "enquedite", "enquedine", "enquedire", "kaemanite_rb", "kaemanite_cs", "kaemanite_ke", "queryl", "quarate", "xenocage",
+        "pezzottaite_ke", "naquasilite", "trinicline", "cassitate", "violite", "stibiquine"
     ]
 
     NaqOres.forEach(ore => {
