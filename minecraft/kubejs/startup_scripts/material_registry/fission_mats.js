@@ -37,94 +37,84 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4900, "high", GTValues.VHA[GTValues.IV], 1400)
 
     // Fissionable elements
-    event.create("thorium_232")
-        .ingot().liquid(2023)
-        .element(GTElements.get("thorium-232"))
-        .color(0x4A5346).secondaryColor(0x0D0F0D).iconSet("radioactive")
-
-    event.create("uranium_233")
-        .ingot().liquid(1405)
-        .element(GTElements.get("uranium-233"))
-        .color(0x23BA23).secondaryColor(0x45463B).iconSet("radioactive")
-
-    event.create("neptunium_236")
-        .ingot().liquid(914)
-        .element(GTElements.get("neptunium-236"))
-        .color(0x3C6598).iconSet("radioactive")
-
-    event.create("plutonium_238")
-        .ingot().liquid(912)
-        .element(GTElements.get("plutonium-238"))
-        .color(0xA20404).secondaryColor(0x222730).iconSet("radioactive")
-
-    event.create("plutonium_242")
-        .ingot().liquid(912)
-        .element(GTElements.get("plutonium-242"))
-        .color(0xD75E5E).secondaryColor(0x222730).iconSet("radioactive")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-
-    event.create("americium_241")
-        .ingot().liquid(1449)
-        .element(GTElements.get("americium-241"))
-        .color(0x145F51).iconSet("radioactive")
-
-    event.create("americium_242")
-        .ingot().liquid(1449)
-        .element(GTElements.get("americium-242"))
-        .color(0x308D7C).iconSet("radioactive")
-
-    event.create("curium_243")
-        .ingot().liquid(1613)
-        .element(GTElements.get("curium-243"))
-        .color(0x240840).iconSet("radioactive")
-
-    event.create("curium_245")
-        .ingot().liquid(1613)
-        .element(GTElements.get("curium-245"))
-        .color(0x38145D).iconSet("radioactive")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-
-    event.create("curium_247")
-        .ingot().liquid(1613)
-        .element(GTElements.get("curium-247"))
-        .color(0x60229E).iconSet("radioactive")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-
-    event.create("berkelium_248")
-        .ingot().liquid(1259)
-        .element(GTElements.get("berkelium-248"))
-        .color(0x8E2A0C).iconSet("radioactive")
-
-    event.create("californium_249")
-        .ingot().liquid(1173)
-        .element(GTElements.get("californium-249"))
-        .color(0xB50B38).iconSet("radioactive")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-
-    event.create("californium_250")
-        .ingot().liquid(1173)
-        .element(GTElements.get("californium-250"))
-        .color(0x550218).iconSet("radioactive")
-
-    event.create("californium_252")
-        .ingot().liquid(1173)
-        .element(GTElements.get("californium-252"))
-        .color(0x62031C).iconSet("radioactive")
-
-    event.create("einsteinium_253")
-        .ingot().liquid(1133)
-        .element(GTElements.get("einsteinium-253"))
-        .color(0xA07C05).iconSet("radioactive")
+    var fisElements = [
+        ["thorium_232", 2023, 0x4A5346, 0x0D0F0D, "fr"],
+        ["uranium_233", 1405, 0x23BA23, 0x3D7F2D, null],
+        ["neptunium_236", 914, 0x3C6598, 0x1A4356, "pw"],
+        ["plutonium_238", 912, 0xA20404, 0x222730, null],
+        ["plutonium_242", 912, 0xD75E5E, 0x673C3C, "pf"],
+        ["americium_241", 1449, 0x145F51, 0x0F4241, null],
+        ["americium_242", 1449, 0x308D7C, 0x2C644F, null],
+        ["curium_243", 1613, 0x240840, 0x090310, null],
+        ["curium_245", 1613, 0x38145D, 0x2B1441, "pf"],
+        ["curium_247", 1613, 0x60229E, 0x4A316F, "pf"],
+        ["berkelium_248", 1259, 0x8E2A0C, 0x472716, "fr"],
+        ["californium_249", 1173, 0xB50B38, 0x65272F, "pf"],
+        ["californium_250", 1173, 0x550218, 0x35030B, null],
+        ["californium_252", 1173, 0x62031C, 0x3F1317, null],
+        ["einsteinium_253", 1133, 0xA07C05, 0x5A4C23, null],
+        ["einsteinium_254", 1133, 0xF0BB0C, 0xBAAE42, null],
+        ["fermium_255", 1800, 0xB180D4, 0x6E466F, "pw"]
+    ]
     
-    event.create("einsteinium_254")
-        .ingot().liquid(1133)
-        .element(GTElements.get("einsteinium-254"))
-        .color(0xF0BB0C).iconSet("radioactive")
+    fisElements.forEach(([name, temp, color, secColor, flags]) => {
+        var mat = event.create(name)
+        mat.ingot().liquid(temp)
+        mat.element(GTElements.get(name.replace("_", "-")))
+        mat.color(color).secondaryColor(secColor).iconSet("radioactive")
+        if (flags == "p") {
+            mat.flags(plate)
+        }
+        else if (flags == "pf") {
+            mat.flags(plate, foil)
+        }
+        else if (flags == "fr") {
+            mat.flags(plate, rod, frame)
+        }
+        else if (flags == "pw") {
+            mat.flags(plate, wire_fine)
+        }
+    })
 
-    event.create("fermium_255")
-        .ingot().liquid(1800)
-        .element(GTElements.get("fermium-255"))
-        .color(0xB180D4).iconSet("radioactive")
+    // Fissionable alloys (currently only for normal fission reactor, maybe breeder later. Not for molten salt reactors)
+    var depletElements = [
+        //["thorium_232", 2023, 0x383938, 0x0D0D0D, "thorium-232"],
+        ["uranium_233", 1405, 0x4B874B, 0x3E5937, "uranium-233"],
+        ["uranium_235", 1405, 0x2E522E, 0x263D21, "uranium_235"],
+        //["uranium_238", 1405, 0x1A261A, 0x121811, "uranium"],
+        ["neptunium_236", 914, 0x3F4B5B, 0x1A2A31, "neptunium-236"],
+        //["neptunium_237", 914, 0x283B49, 0x0C171C, "neptunium"],
+        ["plutonium_239", 912, 0x5C3333, 0x241B1B, "plutonium"],
+        //["plutonium_242", 912, 0xA66F6F, 0x433232, "plutonium-242"],
+        ["americium_242", 1449, 0x3C625B, 0x283B34, "americium-242"],
+        //["americium_243", 1449, 0x203A35, 0x13201B, "americium"],
+        ["curium_245", 1613, 0x291C35, 0x1E1725, "curium-245"],
+        //["curium_246", 1613, 0x42344F, 0x2B1E38, "curium"],
+        //["berkelium_247", 1259, 0x77493B, 0x503424, "berkelium"],
+        ["berkelium_248", 1259, 0x653628, 0x1F1612, "berkelium-248"],
+        //["californium_249", 1173, 0x80364A, 0x48282D, "californium-249"],
+        ["californium_252", 1173, 0x3C121D, 0x140A0B, "californium-252"],
+        //["einsteinium_252", 1133, 0x6E6032, 0x483D1C, "einsteinium"],
+        ["einsteinium_254", 1133, 0xAC9033, 0x857F4D, "einsteinium-254"],
+        ["fermium_255", 1800, 0x9584A1, 0x493B4A, "fermium-255"],
+        //["fermium_257", 1800, 0x5B4A67, 0x3C253C, "fermium"],
+        ["mendelevium_259", 1100, 0x2C3160, 0x181637, "mendelevium"],
+        ["trinium", 7200, 0x4D4656, 0x312D36, "trinium"],
+        ["tiberium", 8100, 0x6A9B6A, 0x050B05, "tiberium"]
+    ]
 
-    // Fissionable alloys
+    depletElements.forEach(([name, temp, color, secColor, element]) => {
+        var mat = event.create("depleted_" + name)
+        mat.ingot().liquid(temp)
+        mat.element(GTElements.get(name.replace("_", "-")))
+        mat.color(color).secondaryColor(secColor).iconSet("dull")
+        mat.flags(disable_decomp)
+    })
+
+    // Depleted fuels
+
+
+    // Molten salt mixtures (TODO)
+
+    // Depleted salt mixtures (TODO)
 })

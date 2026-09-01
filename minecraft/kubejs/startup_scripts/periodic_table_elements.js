@@ -93,8 +93,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
     // Blast Property example (TODO) doesnt work
-    // GTMaterials.Zirconium.setProperty(PropertyKey.BLAST, new $BlastProperty(5000, 'high', GTValues.VHA[GTValues.IV], 1200));
-    // GTMaterials.Rhenium.setProperty(PropertyKey.BLAST, new $BlastProperty(6100, 'highest', GTValues.VHA[GTValues.ZPM], 1100));
+    GTMaterials.Zirconium.setProperty($PropertyKey.BLAST, new $BlastProperty(5000, 'high', GTValues.VHA[GTValues.IV], 1200, -1, -1));
+    GTMaterials.Hafnium.setProperty($PropertyKey.BLAST, new $BlastProperty(6400, 'higher', GTValues.VHA[GTValues.LuV], 1200, -1, -1));
+    GTMaterials.Rhenium.setProperty($PropertyKey.BLAST, new $BlastProperty(7300, "highest", GTValues.VHA[GTValues.ZPM], 1100, -1, -1));
 
 });
 

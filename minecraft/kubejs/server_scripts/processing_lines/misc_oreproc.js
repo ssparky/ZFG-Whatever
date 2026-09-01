@@ -884,6 +884,27 @@ ServerEvents.recipes(event => {
         .outputFluids("minecraft:water 3000")
         .duration(1800).EUt(GTValues.VHA[GTValues.IV])
 
+    // Zirconium/Hafnium sublines
+    event.recipes.gtceu.chemical_reactor("kubejs:zirconium/zirconia_to_tetrachloride")
+        .itemInputs("2x gtceu:carbon_dust", "3x gtceu:zirconia_dust")
+        .inputFluids("gtceu:chlorine 4000")
+        .itemOutputs("5x gtceu:zirconium_tetrachloride_dust")
+        .outputFluids("gtceu:carbon_monoxide 2000")
+        .duration(400).EUt(GTValues.VA[GTValues.EV])
+    event.recipes.gtceu.large_chemical_reactor("kubejs:zirconium/hafnium_to_tetraiodide")
+        .itemInputs("2x gtceu:carbon_dust", "3x gtceu:hafnia_dust", "4x gtceu:iodine_dust")
+        .itemOutputs("5x gtceu:hafnium_tetraiodide_dust")
+        .outputFluids("gtceu:carbon_monoxide 2000")
+        .duration(400).EUt(GTValues.VA[GTValues.IV])
+    event.recipes.gtceu.electric_blast_furnace("kubejs:zirconium/zirconium_tetrachloride_to_metal")
+        .itemInputs("5x gtceu:zirconium_tetrachloride_dust", "4x gtceu:lithium_dust")
+        .itemOutputs("1x gtceu:hot_zirconium_ingot", "8x gtceu:lithium_chloride_dust")
+        .duration(800).EUt(GTValues.VA[GTValues.IV]).blastFurnaceTemp(5200)
+    event.recipes.gtceu.electric_blast_furnace("kubejs:zirconium/hafnium_tetraiodide_to_metal")
+        .itemInputs("5x gtceu:hafnium_tetraiodide_dust", "2x gtceu:samarium_dust")
+        .itemOutputs("1x gtceu:hot_hafnium_ingot", "6x gtceu:samarium_iodide_dust")
+        .duration(800).EUt(GTValues.VA[GTValues.LuV]).blastFurnaceTemp(6600)
+
     // Mo/Re Line
     // Ore digestion
     event.recipes.gtceu.chemical_reactor("kubejs:molybdenum_rhenium/dzhezkazganite_digestion")

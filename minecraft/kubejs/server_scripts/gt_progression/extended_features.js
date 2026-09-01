@@ -153,5 +153,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .EUt(GTValues.VA[GTValues.UHV])
     
-    
+    // SyVe recipes (TODO)
+    // event.recipes.gtceu.chemical_skips("kubejs:ef/syve_earthline_light")
+    //     .inputFluids("gtceu:light_ree_nitrate_residue 1000")
 })
