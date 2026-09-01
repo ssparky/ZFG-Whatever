@@ -106,7 +106,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     depletElements.forEach(([name, temp, color, secColor, element]) => {
         var mat = event.create("depleted_" + name)
         mat.ingot().liquid(temp)
-        mat.element(GTElements.get(name.replace("_", "-")))
+        mat.element(GTElements.get(element))
         mat.color(color).secondaryColor(secColor).iconSet("dull")
         mat.flags(disable_decomp)
     })
