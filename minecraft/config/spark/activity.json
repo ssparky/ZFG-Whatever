@@ -5,6 +5,19 @@
       "name": "ssparky33",
       "uniqueId": "5fd9ab59-4033-4baa-ab8b-92e1fe3b415c"
     },
+    "time": 1788524160719,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/aHy5Bt6vBl"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "ssparky33",
+      "uniqueId": "5fd9ab59-4033-4baa-ab8b-92e1fe3b415c"
+    },
     "time": 1785770417112,
     "type": "Profiler (live)",
     "data": {

@@ -5,6 +5,12 @@ const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.m
 // Registry
 GTCEuStartupEvents.registry('gtceu:material', event => {
 
+    let addFluid = (mat, key, temp) => {
+        let prop = new $FluidProperty()
+        prop.getStorage().enqueueRegistration(key, new $FluidBuilder().temperature(temp))
+        mat.setProperty(PropertyKey.FLUID, prop)
+    }
+
     // Group 1
     GTMaterials.Rubidium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Francium.setProperty(PropertyKey.DUST, new $DustProperty());
@@ -28,18 +34,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Actinium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Protactinium.setProperty(PropertyKey.DUST, new $DustProperty());
     GTMaterials.Neptunium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Neptunium, $FluidStorageKeys.LIQUID, 913);
     GTMaterials.Curium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID, 1618);
     GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);
     GTMaterials.Californium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);
     GTMaterials.Einsteinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     GTMaterials.Fermium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Fermium, $FluidStorageKeys.LIQUID, 1800);
     GTMaterials.Mendelevium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Mendelevium, $FluidStorageKeys.LIQUID, 1100);
     GTMaterials.Nobelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Nobelium, $FluidStorageKeys.LIQUID, 1100);
     GTMaterials.Lawrencium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
     // Group 4
     GTMaterials.Zirconium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Zirconium, $FluidStorageKeys.LIQUID, 2125);
     GTMaterials.Hafnium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Hafnium, $FluidStorageKeys.LIQUID, 2506);
     GTMaterials.Rutherfordium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     
     // Group 5
@@ -51,6 +67,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Group 7
     GTMaterials.Technetium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Rhenium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    addFluid(GTMaterials.Rhenium, $FluidStorageKeys.LIQUID, 3459);
     GTMaterials.Bohrium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
     // Group 8

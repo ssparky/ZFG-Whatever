@@ -265,6 +265,67 @@ GTCEuServerEvents.oreVeins(event => {
             radius: 5
         }
     })
+    registerOreVein("fourth_layer/spinel", {
+        weight: 28,
+        clusterSize: 26,
+        density: 0.78,
+        layer: "fourth_layer",
+        dimensions: [
+            "infinite_abyss:fourth_layer"
+        ],
+        heightRange: {
+            type: "uniform",
+            min: 0,
+            max: 37
+        },
+        generator: {
+            type: "layered",
+            layers: [
+                {
+                    weight: 4,
+                    material: GTMaterials.get("spinel"),
+                    minSize: 2,
+                    maxSize: 3
+                },
+                {
+                    weight: 3,
+                    material: GTMaterials.get("trevorite"),
+                    minSize: 1,
+                    maxSize: 2
+                },
+                {
+                    weight: 3,
+                    material: GTMaterials.get("galaxite"),
+                    minSize: 2,
+                    maxSize: 3
+                },
+                {
+                    weight: 2,
+                    material: GTMaterials.get("xieite"),
+                    minSize: 1,
+                    maxSize: 3
+                },
+                {
+                    weight: 2,
+                    material: GTMaterials.get("chromite"),
+                    minSize: 1,
+                    maxSize: 2
+                },
+                {
+                    weight: 1,
+                    material: GTMaterials.get("ulvospinel"),
+                    minSize: 1,
+                    maxSize: 2
+                }
+            ]
+        },
+        indicator: {
+            surfaceRock: GTMaterials.get("spinel"),
+            placement: "above",
+            density: 0.2,
+            radius: 5
+        }
+    })
 
     // Final Builder loop
     veins.forEach(entry => {

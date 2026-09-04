@@ -1,0 +1,7 @@
+{
+    "id": "zfg12:crushed_ores",
+    "type": "remi:group",
+    "contents": [
+        "#forge:crushed_ores"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "id": "zfg12:apotheosis_gems",
+    "type": "remi:group",
+    "contents": [
+        "apotheosis:gem"
+    ]
+}

@@ -1,0 +1,16 @@
+filename = 'phoenix_wiki-0.2.0.jar'
+name = 'PhoenixWiki'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '23ec6695eb5e45404954550966b73e1e3a227c60'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8735977
+project-id = 1647798

@@ -1,4 +1,4 @@
-filename = 'spatialtoolscmp-1.11.0.jar'
+filename = 'spatialtoolscmp-1.12.0.jar'
 name = 'Spatial Tools Compatible'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '906201e0a7812829fb781ef9b5a08835058cc02c2231d6fe821174451d4d4ef653427756fd34cb1dd8d083f135b4f853c007965e8af91daa60cbb2e7701e855d'
+hash = 'af88fd37cdce1d59773a48bfb14b032689d3552c236abdf4e1bc7f1364f6062ab81f63399223d42c684451869dc4deb53e8752a10acde473b8d1dae05bb27a0d'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/iKhNYcsL/versions/hzigSGgJ/spatialtoolscmp-1.11.0.jar'
+url = 'https://cdn.modrinth.com/data/iKhNYcsL/versions/hJKbzTwc/spatialtoolscmp-1.12.0.jar'
 
 [update.modrinth]
 mod-id = 'iKhNYcsL'
-version = 'hzigSGgJ'
+version = 'hJKbzTwc'

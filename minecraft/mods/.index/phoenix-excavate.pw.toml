@@ -1,0 +1,16 @@
+filename = 'phoenix_excavate-2.2.jar'
+name = 'Phoenix Excavate'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'acbd9e068cb10006c23f53b61210db6d8bbaa1db'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8771759
+project-id = 1624778

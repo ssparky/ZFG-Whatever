@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+    // Swap out thorium in deepslate processing
+    event.remove({id: "gtceu:macerator/macerate_deepslate"})
+    event.recipes.gtceu.macerator("kubejs:misc/macerate_deepslate")
+        .itemInputs("minecraft:deepslate")
+        .itemOutputs("gtceu:deepslate_dust")
+        .chancedOutput("gtceu:thorium_232_dust", 150, 0)
+        .chancedOutput("gtceu:small_thorium_dust", 75, 0)
+        .duration(20*7.5)
+        .EUt(2)
+
     // RPP simple recipes
     // event.recipes.extendedfeatures.rock_processing_facility("kubejs:ef/rpp_process_stone")
     //     .itemInputs("minecraft:stone")

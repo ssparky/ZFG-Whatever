@@ -1,0 +1,5 @@
+{
+    "id": "zfg12:raw_ore_blocks",
+    "type": "remi:regex",
+    "regex": ".*:raw_.*_block"
+}

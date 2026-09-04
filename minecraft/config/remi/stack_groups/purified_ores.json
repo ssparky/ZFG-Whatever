@@ -1,0 +1,7 @@
+{
+    "id": "zfg12:purified_ores",
+    "type": "remi:group",
+    "contents": [
+        "#forge:purified_ores"
+    ]
+}

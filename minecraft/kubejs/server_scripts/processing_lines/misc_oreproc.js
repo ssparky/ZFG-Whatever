@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath("kubejs:tungstenline/ootannite")
         .itemInputs("27x gtceu:ootannite_dust")
         .inputFluids("gtceu:hydrochloric_acid 5000")
-        .itemOutputs("28x gtceu:tungstic_acid_dust", "2x gtceu:thorium_dust")
+        .itemOutputs("28x gtceu:tungstic_acid_dust", "2x gtceu:thorium_232_dust")
         .outputFluids("gtceu:diluted_hydrochloric_acid 10000")
         .EUt(GTValues.VHA[GTValues.EV])
         .duration(840)
@@ -499,7 +499,7 @@ ServerEvents.recipes(event => {
         .inputFluids("minecraft:water 2000")
         .chancedFluidInput("gtceu:nitric_acid", 3000, 0)
         .chancedFluidInput("gtceu:sulfuric_acid", 3000, 0)
-        .itemOutputs("5x gtceu:yttria_dust", "2x gtceu:quicklime_dust", "3x gtceu:ceria_dust", "3x gtceu:uraninite_dust", "1x gtceu:thorium_dust", 
+        .itemOutputs("5x gtceu:yttria_dust", "2x gtceu:quicklime_dust", "3x gtceu:ceria_dust", "3x gtceu:uraninite_dust", "1x gtceu:thorium_232_dust", 
             "25x gtceu:niobium_pentoxide_dust", "11x gtceu:tantalum_pentoxide_dust", "6x gtceu:titanium_dioxide_mix_dust")
         .chancedFluidOutput("gtceu:dilute_nitric_acid 2000", 3000, 0)
         .chancedFluidOutput("gtceu:diluted_sulfuric_acid 2000", 3000, 0)

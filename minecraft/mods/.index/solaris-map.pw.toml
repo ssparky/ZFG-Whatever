@@ -1,0 +1,16 @@
+filename = 'solaris-1.4.jar'
+name = 'Solaris (Map)'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'a136db12a1c0aeb20895a5e7e7fe20c8a7b74fd2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8747223
+project-id = 1622856

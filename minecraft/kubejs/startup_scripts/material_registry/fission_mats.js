@@ -85,6 +85,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         ["neptunium_236", 914, 0x3F4B5B, 0x1A2A31, "neptunium-236"],
         //["neptunium_237", 914, 0x283B49, 0x0C171C, "neptunium"],
         ["plutonium_239", 912, 0x5C3333, 0x241B1B, "plutonium"],
+        ["plutonium_241", 912, 0x542020, 0x321414, "plutonium-241"],
         //["plutonium_242", 912, 0xA66F6F, 0x433232, "plutonium-242"],
         ["americium_242", 1449, 0x3C625B, 0x283B34, "americium-242"],
         //["americium_243", 1449, 0x203A35, 0x13201B, "americium"],

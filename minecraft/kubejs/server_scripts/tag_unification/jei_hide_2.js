@@ -43,5 +43,6 @@ ServerEvents.tags("item", event => {
     event.add("c:hidden_from_recipe_viewers", /^"cb_microblock:microblock"$/)
     event.add("c:hidden_from_recipe_viewers", /^"productivebees:spawn_egg_[a-z]*"$/)
     event.add("c:hidden_from_recipe_viewers", /^gtceu:[a-z0-9]+(?:_+[a-z0-9]+)*_indicator$/)
+    event.add("c:hidden_from_recipe_viewers", /^chiselsandbits:block_bit$/)
 
 });

@@ -3,7 +3,7 @@
   "enable_rendering": true,
   "ingest_enabled": true,
   "section_render_distance": 64.0,
-  "service_threads": 24,
+  "service_threads": 16,
   "sub_division_size": 64.0,
   "render_voxy_fog": true,
   "sky_fog_distance": 96,

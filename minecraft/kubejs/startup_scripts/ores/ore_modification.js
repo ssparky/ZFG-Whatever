@@ -65,6 +65,35 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     ferrosilite_ore_prop.setOreByProducts(GTMaterials.Spodumene, GTMaterials.Iron, GTMaterials.Kyanite)
     GTMaterials.Ferrosilite.setProperty($PropertyKey.ORE, ferrosilite_ore_prop)
 
+    // Fixes specifically for thorium (230->232)
+    // let pitchblende_ore_prop = new $OreProperty(1, 1);
+    // pitchblende_ore_prop.setOreByProducts("thorium_232", GTMaterials.Uraninite, GTMaterials.Lead)
+    // GTMaterials.Pitchblende.setProperty($PropertyKey.ORE, pitchblende_ore_prop)
+
+    // let tuliokite_ore_prop = new $OreProperty(1, 1);
+    // tuliokite_ore_prop.setOreByProducts("shortite", "natron", "villiaumite", "thorium_232")
+    // GTMaterials.Tuliokite.setProperty($PropertyKey.ORE, tuliokite_ore_prop)
+
+    // let uraninite_ore_prop = new $OreProperty(1, 1);
+    // uraninite_ore_prop.setOreByProducts(GTMaterials.Uraninite, "thorium_232", GTMaterials.Silver)
+    // GTMaterials.Uraninite.setProperty($PropertyKey.ORE, uraninite_ore_prop)
+
+    // let coal_ore_prop = new $OreProperty(1, 1);
+    // coal_ore_prop.setOreByProducts(GTMaterials.Coal, GTMaterials.Coal, "thorium_232")
+    // GTMaterials.Coal.setProperty($PropertyKey.ORE, coal_ore_prop)
+
+    // let thorium_ore_prop = new $OreProperty(1, 1);
+    // thorium_ore_prop.setOreByProducts(GTMaterials.Uraninite, "thorium_232", GTMaterials.Lead)
+    // GTMaterials.Thorium.setProperty($PropertyKey.ORE, thorium_ore_prop)
+
+    // let beryllium_ore_prop = new $OreProperty(1, 1);
+    // beryllium_ore_prop.setOreByProducts(GTMaterials.Emerald, GTMaterials.Emerald, "thorium_232")
+    // GTMaterials.Beryllium.setProperty($PropertyKey.ORE, beryllium_ore_prop)
+
+    // let monazite_ore_prop = new $OreProperty(1, 1);
+    // monazite_ore_prop.setOreByProducts("thorium_232", GTMaterials.Neodymium, GTMaterials.RareEarth)
+    // GTMaterials.Monazite.setProperty($PropertyKey.ORE, monazite_ore_prop)
+
 });
 
 GTCEuStartupEvents.materialModification(event => {
@@ -82,4 +111,18 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Sapphire.setComponents("1x corundum")
     GTMaterials.GreenSapphire.setComponents("1x corundum")
     GTMaterials.Ruby.setComponents("1x corundum", "1x chromium")
+
+    // GTMaterials.Pitchblende.setComponents("3x uraninite", "1x thorium_232", "1x lead")
+    // GTMaterials.Tuliokite.setComponents("6x sodium", "1x barium", "1x thorium_232", "6x carbon", "18x oxygen", "6x water"),
+    // GTMaterials.Althupite.setComponents("1x aluminium", "1x thorium_232", "7x uraninite", "4x phosphate", "7x oxygen", "5x hydrogen", "15x water")
+    // GTMaterials.Enalite.setComponents("2x thorium_232", "1x rare_earth", "1x aluminium", "2x phosphate", "1x silicon", "5x oxygen", "1x hydrogen")
+    // GTMaterials.Thorite.setComponents("1x thorium_232", "1x silicon", "4x oxygen")
+    // GTMaterials.Thorianite.setComponents("1x thorium_232", "2x oxygen")
+    // GTMaterials.Ekanite.setComponents("2x calcium", "1x thorium_232", "8x silicon", "20x oxygen")
+    // GTMaterials.Ekebergite.setComponents("1x thorium_232", "1x iron", "2x niobium", "8x oxygen")
+    // GTMaterials.Grayite.setComponents("2x thorium_232", "1x lead", "1x calcium", "4x phosphate", "4x water")
+    // GTMaterials.Kivuite.setComponents("1x thorium_232", "4x uraninite", "2x phosphate", "10x hydrogen", "8x oxygen", "7x water")
+    // GTMaterials.Ootannite.setComponents("2x thorium_232", "4x tungsten", "16x oxygen", "5x water")
+    // GTMaterials.EuxeniteY.setComponents("2x yttrium", "1x calcium", "1x cerium", "1x uranium", "1x thorium_232", "7x niobium", "3x tantalum", "2x titanium", "36x oxygen")
+    // GTMaterials.Thorutite.setComponents("2x thorium_232", "1x uranium", "1x calcium", "8x titanium", "24x oxygen", "10x hydrogen")
 });
