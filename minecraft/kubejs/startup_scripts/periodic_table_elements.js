@@ -31,8 +31,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Thulium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Ytterbium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Lutetium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Actinium.setProperty(PropertyKey.DUST, new $DustProperty());
-    GTMaterials.Protactinium.setProperty(PropertyKey.DUST, new $DustProperty());
+    GTMaterials.Actinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Protactinium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Neptunium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     addFluid(GTMaterials.Neptunium, $FluidStorageKeys.LIQUID, 913);
     GTMaterials.Curium.setProperty(PropertyKey.INGOT, new $IngotProperty());
