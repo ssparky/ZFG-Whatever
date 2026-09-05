@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
         gen.chancedOutput(sapling, 5000, 0)
         gen.circuit(1)
         gen.duration(600)
-        gen.EUt(GTValues.VA[GTValues.LV])
+        gen.EUt(GTValues.VHA[GTValues.LV])
 
         const gen2 = event.recipes.extendedfeatures.greenhouse_wood_recipes(`kubejs:ef/greenhouse_${mod}_${sapling.replace(/[:/]/g, '_')}_boosted`)
         gen2.notConsumable(sapling)
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         }
         gen2.circuit(2)
         gen2.duration(600)
-        gen2.EUt(GTValues.VA[GTValues.LV])
+        gen2.EUt(GTValues.VHA[GTValues.LV])
     }
     function growCrop(mod, sapling, wood, bonus) {
         const baseOutputs = [`12x ${wood}`]
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
         gen.chancedOutput(sapling, 5000, 0)
         gen.circuit(1)
         gen.duration(600)
-        gen.EUt(GTValues.VA[GTValues.LV])
+        gen.EUt(GTValues.VHA[GTValues.LV])
 
         const gen2 = event.recipes.extendedfeatures.greenhouse_crop_recipes(`kubejs:ef/greenhouse_${mod}_${sapling.replace(/[:/]/g, '_')}_boosted`)
         gen2.notConsumable(sapling)
@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         }
         gen2.circuit(2)
         gen2.duration(600)
-        gen2.EUt(GTValues.VA[GTValues.LV])
+        gen2.EUt(GTValues.VHA[GTValues.LV])
     }
 
     growTree("minecraft", "dynamictrees:oak_seed", "minecraft:oak_log", "minecraft:apple")
