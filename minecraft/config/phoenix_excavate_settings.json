@@ -3,10 +3,11 @@
   "generalMiningExhaustion": false,
   "respectDurability": true,
   "respectEnchantments": true,
+  "collectToPlayer": true,
   "maxVeinSize": 64,
   "includeDiagonalNeighbors": true,
   "holdToActivate": true,
   "matchModeId": "exact",
   "theme": "DARK",
-  "outlineColorHex": ""
+  "outlineColorHex": "FF8833"
 }

@@ -79,8 +79,51 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("hydrogen_heptafluorotantalate").fluid().iconSet(GTMaterialIconSet.FINE).color(0xD3D1F1).secondaryColor(0x543E7F)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("2x hydrogen", "1x tantalum", "7x fluorine")
 
-    event.create("hydrogen_pentafluorooxyniobate").fluid().iconSet(GTMaterialIconSet.FINE).color(0xD3D1F1).secondaryColor(0x543E7F)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("2x hydrogen", "1x niobium", "5x fluorine", "1x oxygen")
+    event.create("hydrogen_heptafluoroniobate").fluid().iconSet(GTMaterialIconSet.FINE).color(0xE6D1F1).secondaryColor(0x683E7F)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("2x hydrogen", "1x niobium", "7x fluorine")
+
+    event.create("hydrogen_heptafluoride_metal_mixture").fluid().iconSet(GTMaterialIconSet.FINE).color(0xB596E7).secondaryColor(0x502766)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING).components("2x hydrogen_heptafluoroniobate", "1x hydrogen_heptafluorotantalate")
+
+    event.create("scandium_fluoride").dust().iconSet(GTMaterialIconSet.BRIGHT).color(0xFFFFFF).secondaryColor(0xCEEEC6)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x scandium", "3x fluorine")
+
+    event.create("magnesium_fluoride").dust().iconSet(GTMaterialIconSet.FINE).color(0xFEEFFE).secondaryColor(0x786855)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x magnesium", "2x fluorine")
+
+    event.create("tin_fluoride").dust().iconSet(GTMaterialIconSet.ROUGH).color(0xABA7AA).secondaryColor(0x7FC2BF)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x tin", "2x fluorine")
+
+    event.create("yttrium_fluoride").dust().iconSet(GTMaterialIconSet.FINE).color(0xA8A88F).secondaryColor(0xA5B895)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x yttrium", "3x fluorine")
+
+    event.create("ytterbium_ii_fluoride").dust().iconSet(GTMaterialIconSet.DULL).color(0x8D8D8D).secondaryColor(0x6B6B6B)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x ytterbium", "2x fluorine")
+
+    event.create("thorium_fluoride").dust().iconSet(GTMaterialIconSet.DULL).color(0xCBE4C9).secondaryColor(0x6B7762)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x thorium_232", "4x fluorine")
+
+    event.create("barium_fluoride").dust().iconSet(GTMaterialIconSet.FINE).color(0xEED5BB).secondaryColor(0xC5A760)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x barium", "2x fluorine")
+
+    event.create("cerium_trifluoride").dust().iconSet(GTMaterialIconSet.ROUGH).color(0xD4D3A8).secondaryColor(0xADA86D)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("1x cerium", "3x fluorine")
+
+    event.create("uranium_tetrafluoride").dust().iconSet(GTMaterialIconSet.SHINY).color(0x9FE99C).secondaryColor(0x53B4A0)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x uranium", "4x fluorine")
+
+    event.create("lead_ii_fluoride").dust().iconSet(GTMaterialIconSet.FINE).color(0x8A678E).secondaryColor(0x62164F)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x lead", "2x fluorine")
+
+    event.create("uraninite_leachate").fluid().iconSet(GTMaterialIconSet.FINE).color(0xA39E72).secondaryColor(0x626627)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("niobium_pentoxide_hydrate").dust().iconSet(GTMaterialIconSet.DULL).color(0xC1A5BF).secondaryColor(0x926486)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("1x niobium_pentoxide", "5x water")
+    event.create("tantalum_pentoxide_hydrate").dust().iconSet(GTMaterialIconSet.DULL).color(0xB0A5C1).secondaryColor(0x776492)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION).components("1x tantalum_pentoxide", "5x water")
+    event.create("ammonium_fluoride").dust().iconSet(GTMaterialIconSet.FINE).color(0xC3BFC3).secondaryColor(0x5E859D)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x ammonia", "1x hydrofluoric_acid")
 
     event.create("rubidium_fluoride").dust().iconSet(GTMaterialIconSet.DULL).color(0xFFC1C1).secondaryColor(0xDB4C4C)
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING).components("1x rubidium", "1x fluorine")

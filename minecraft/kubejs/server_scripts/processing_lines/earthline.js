@@ -311,7 +311,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:uranium_filtrate 1000", "gtceu:hydrofluoric_acid 4000", "gtceu:fluorine 2000")
         .outputFluids("gtceu:uranium_hexafluoride 1000", "minecraft:water 2000")
         .chancedOutput("gtceu:small_lead_dust", 8500, 0)
-        .chancedOutput("gtceu:tiny_thorium_dust", 4500, 0)
+        .chancedOutput("gtceu:small_thorium_232_dust", 4500, 0)
+        .chancedOutput("gtceu:tiny_uranium_233_dust", 700, 0)
         .EUt(GTValues.VA[GTValues.LV])
         .duration(200)
 

@@ -205,6 +205,20 @@ ServerEvents.tags("item", event => {
     })
 
     // Uranium/Thorium line
+    var UranThOres = [
+        "haitaite_la", "davidite_ce", "davidite_la", "uranopolycrase", "euxenite_y", "thorutite", "brannerite", "fluorplumbopyrochlore", "uraninite", "pitchblende",
+        "thorianite", "ekebergite", "mourite", "schoepite", "studtite", "billietite", "sayrite", "curite", "spriggite", "margaritasite", "carnotite", "finchite",
+        "vanuralite", "uvanite", "chadwickite", "seelite", "piretite", "cliffordite", "tuliokite", "wyartite", "sharpite", "bayleyite", "rabbittite", "linekite",
+        "paddlewheelite", "voglite", "lepersonnite_gd", "lepersonnite_nd", "mathesiusite", "uranopilite", "bobcookite", "alwilkinsite_y", "greenlizardite",
+        "seaborgite", "zippeite", "oppenheimerite", "ootannite", "uranotungstite", "grayite", "ningyoite", "urphoite", "saryakite_y", "ulrichite", "uranocircite",
+        "torbernite", "przhevalskite", "uramphite", "uranosphathite", "coconinoite", "upalite", "francoisite_nd", "francoisite_ce", "kivuite", "althupite",
+        "mundite", "coffinite", "thorite", "enalite", "vicanite", "uranophane", "barronite", "uranosilite", "phosinaite_ce", "ciprianiite", "ekanite", "uroxite"
+    ]
+
+    MoReOres.forEach(ore => {
+        event.add("gtceu:oreproc", `gtceu:purified_${ore}_ore`)
+        event.add("gtceu:oreproc/uranium", `gtceu:purified_${ore}_ore`)
+    })
 
     // Nq Line
     var NaqOres = [
