@@ -37,8 +37,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({id:"toms_storage:inventory_proxy"}, "#minecraft:planks", "gtceu:treated_wood_plate")
 
     // Crafting terminal
-    event.replaceInput({id:"toms_storage:crafting_terminal"}, "#minecraft:planks", "gtceu:treated_wood_plate")
-    event.replaceInput({id:"toms_storage:inventory_proxy"}, "#c:diamonds", "#gtceu:circuits/lv")
+    event.replaceInput({id:"toms_storage:crafting_terminal"}, "#c:diamonds", "#gtceu:circuits/lv")
 
     // Inventory hopper
     event.replaceInput({id:"toms_storage:inventory_hopper_basic"}, "#minecraft:planks", "gtceu:treated_wood_plate")
