@@ -128,3 +128,16 @@
 		#Range: > 0
 		baseInternalPowerCapacity = 200000
 
+	#Spatial IO port feature.
+	#The spatial IO port runs a portable spatial storage put into its input slot
+	#whenever it receives a redstone signal, and then pushes the tool
+	#into its output slot. It draws energy from its own buffer,
+	#never from the tool.
+	[features.spatialIoPort]
+		#Size of the energy buffer of the spatial IO port.
+		#Range: > 0
+		powerCapacity = 2000000
+		#Maximum energy the spatial IO port accepts per tick.
+		#Range: > 0
+		maxPowerInput = 100000
+

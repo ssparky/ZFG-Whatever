@@ -435,7 +435,7 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.UV])
     event.recipes.gtceu.assembler("kubejs:ae2/spatial_core")
-        .itemInputs("1x ae2:spatial_cell_component_128", "1x crazyae2addons:portable_spatial_storage", "1x gtceu:uv_field_generator",
+        .itemInputs("1x ae2:spatial_cell_component_128", "1x spatialtoolscmp:portable_spatial_storage", "1x gtceu:uv_field_generator",
             "1x extendedae_plus:oblivion_singularity", "4x #forge:ingots/netherite", "2x gtceu:quantum_star"
         )
         .inputFluids("gtceu:neutronium 1024")
@@ -780,6 +780,10 @@ ServerEvents.recipes(event => {
     event.remove({id:"ae2:network/crafting/cpu_crafting_unit"})
     event.remove({id:"megacells:crafting/mega_crafting_unit"})
     event.remove({id:"expandedae:crafting/exp_crafting_unit_mega"})
+    event.remove({id:"mae2:network/crafting/256x_crafting_accelerator"})
+    event.remove({id:"mae2:network/crafting/64x_crafting_accelerator"})
+    event.remove({id:"mae2:network/crafting/16x_crafting_accelerator"})
+    event.remove({id:"mae2:network/crafting/4x_crafting_accelerator"})
 
     event.shaped("ae2:crafting_unit", [
         "ABA",

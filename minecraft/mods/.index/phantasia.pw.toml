@@ -1,4 +1,4 @@
-filename = 'Phantasia-4.0.1.jar'
+filename = 'Phantasia-4.2.0.jar'
 name = 'Phantasia'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '28129516b8071cb02390ca1af557bee2b63c9eed'
+hash = 'b1e6cb209b9ae564bdf75a5593afa773fcae925b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8604345
+file-id = 8807498
 project-id = 1589286

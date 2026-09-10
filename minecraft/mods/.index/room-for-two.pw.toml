@@ -1,0 +1,16 @@
+filename = 'roomfortwo-forge-1.20.1-0.2.0.jar'
+name = 'Room For Two'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'alpha'
+
+[download]
+hash = 'a7a56de65c27f6b4dff244b063ea25dfac0e2301ab7e01051d117976888f77236de2b12f150725272407fb9f76f671584650df88abd7be9ddc5a51472481b31e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/YZlvzIFq/versions/q9uWNES7/roomfortwo-forge-1.20.1-0.2.0.jar'
+
+[update.modrinth]
+mod-id = 'YZlvzIFq'
+version = 'q9uWNES7'

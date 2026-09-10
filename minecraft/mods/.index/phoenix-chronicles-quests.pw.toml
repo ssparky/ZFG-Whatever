@@ -1,16 +1,16 @@
-filename = 'phoenix_chronicles-4.0.jar'
-name = 'Phoenix Chronicles (Quests)'
+filename = 'phoenix_chronicles-5.0.jar'
+name = "Phoenix's Chronicles"
 side = 'server'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'ea1af8b0ecbad55a3f97aea5f0cc0a7fd13e9b87'
+hash = 'd509eb4341eda500836c3d1444a135f1d1bf0f86'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8751236
+file-id = 8799616
 project-id = 1614113

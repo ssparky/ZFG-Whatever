@@ -1,4 +1,4 @@
-filename = 'fusion-1.3.15-forge-mc1.20.1.jar'
+filename = 'fusion-1.3.15a-forge-mc1.20.1.jar'
 name = 'Fusion'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'daffa4c7ea5db53354da28510fda47d3701d2f7a0373c3e24419a35125fbe912f432442240b79ef0c3d480d427e4ee7ebc395629861cb737e086638d2bd201bd'
+hash = '86c9ebf791ebb5ff3989f1f6481f168fe99096751d5d69f4433bb9e862287b4c5dd9ac17fd5343f7fbcf5686af41038cbf81dc07f46a27b6472988c5ac3eb193'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/p19vrgc2/versions/s8QN1MsD/fusion-1.3.15-forge-mc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/p19vrgc2/versions/8Vz7tRMY/fusion-1.3.15a-forge-mc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'p19vrgc2'
-version = 's8QN1MsD'
+version = '8Vz7tRMY'

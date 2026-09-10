@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({id:"spatialtoolscmp:portable_spatial_storage"})
     event.remove({id:"spatialtoolscmp:portable_spatial_cloner"})
     event.remove({id:"spatialtoolscmp:portable_spatial_replacer"})
+    event.remove({id:"spatialtoolscmp:portable_spatial_piper"})
     event.shaped("spatialtoolscmp:portable_spatial_storage", [
         "ABA",
         "CED",
@@ -27,6 +28,13 @@ ServerEvents.recipes(event => {
         .itemInputs("spatialtoolscmp:portable_spatial_storage", "8x gtceu:ender_eye_dust")
         .itemOutputs("spatialtoolscmp:portable_spatial_replacer")
         .inputFluids("gtceu:vibrant_alloy 576")
+        .EUt(GTValues.VHA[GTValues.HV])
+        .duration(600)
+
+    event.recipes.gtceu.autoclave("kubejs:stcmp/spatial_piper")
+        .itemInputs("spatialtoolscmp:portable_spatial_storage", "8x gtceu:red_alloy_dust")
+        .itemOutputs("spatialtoolscmp:portable_spatial_piper")
+        .inputFluids("gtceu:octane 500")
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(600)
 
