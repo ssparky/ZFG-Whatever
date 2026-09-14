@@ -1,16 +1,16 @@
-filename = 'starcatcher-3.1.4.3-FORGE-1.20.1.jar'
-name = 'starcatcher'
+filename = 'starcatcher-3.1.4.4-FORGE-1.20.1.jar'
+name = 'Starcatcher'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.20.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '165c85b46efb4bc2d6f477411ea6e120ee7bc05d82883d38aada148eb2d6f788684baa7b86e849eaa745ce1de1c4414c7a20ffa65513647e09329ee87a6c1e0d'
+hash = '065e064eb41486092b697262bff5450486fd36f8d71d8ba67f0f2f29645243d3f15c9819af8a8763464fbac7cf69aef71170698dbdea95ca0971781bb6575aee'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/h2jXvxNR/versions/9531K74r/starcatcher-3.1.4.3-FORGE-1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/h2jXvxNR/versions/LLEg27kz/starcatcher-3.1.4.4-FORGE-1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'h2jXvxNR'
-version = '9531K74r'
+version = 'LLEg27kz'

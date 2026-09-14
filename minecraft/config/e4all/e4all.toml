@@ -29,11 +29,44 @@ dialtoneRelayMap = "https://natives.e4mc.link/relaymap.json"
 # default: true
 dialtoneSanitizeTicket = true
 # Whether to enable offline mode (disables Microsoft authentication for ALL LAN connections, including both tunneled and direct). Toggle via the 'Online Mode' button on the Open to LAN screen.
-# default: true
+# default: false
 offlineMode = false
 # Whether the offline mode warning has already been shown to the user
 # default: false
 offlineWarningShown = true
+# Whether the welcome message has already been shown to the user
+# default: false
+welcomeShown = false
 # Whether to hide the domain in the chat message (click to copy still works)
 # default: false
 hideDomainInChat = false
+# Maximum number of automatic reconnect attempts before giving up
+# default: 5
+reconnectMaxAttempts = 5
+# Base delay in seconds before the first reconnect attempt (doubles each attempt)
+# default: 2
+reconnectBaseDelaySeconds = 2
+# Interval in seconds between keepalive probes to the relay
+# default: 15
+keepaliveIntervalSeconds = 15
+# Master switch for SVC P2P voice support. When disabled, voice will not be negotiated.
+# default: true
+voiceP2PEnabled = true
+# Allow pure-Java UDP path when Dialtone is unavailable (e.g. Android, or iroh connection would be relayed)
+# default: true
+voiceP2PUdpFallback = true
+# Try direct IPv6 before UDP hole punching
+# default: true
+voiceP2PEnableIpv6 = true
+# Request router port mapping (UPnP/NAT-PMP/PCP) on desktop host for UDP voice
+# default: true
+voiceP2PEnableUpnp = true
+# Overall voice negotiation timeout in milliseconds
+# default: 10000
+voiceP2PConnectTimeoutMs = 10000
+# UDP hole punch attempt duration in milliseconds
+# default: 5000
+voiceP2PPunchDurationMs = 5000
+# Display voice negotiation progress as a HUD status line
+# default: true
+voiceP2PHudStatus = true

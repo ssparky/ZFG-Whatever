@@ -1,0 +1,16 @@
+filename = 'insaneae2addons-3.2.3.jar'
+name = 'Insane AE2 Addons'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '02a0ed01794f8ad6b935dbabb426b3efd6261ddc20d0b5efa6b560cee36a45396a5f999cf1f52936f47d4a847167114d8124dff66c77c5424034dc248dee40df'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/e9wrOeG3/versions/BrB68HgI/insaneae2addons-3.2.3.jar'
+
+[update.modrinth]
+mod-id = 'e9wrOeG3'
+version = 'BrB68HgI'

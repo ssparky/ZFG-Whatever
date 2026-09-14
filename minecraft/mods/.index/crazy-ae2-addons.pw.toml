@@ -1,4 +1,4 @@
-filename = 'crazyae2addons-2.6.2-all.jar'
+filename = 'crazyae2addons-3.2.5-all.jar'
 name = 'Crazy AE2 Addons'
 side = 'both'
 x-prismlauncher-loaders = [ 'forge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5'
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'bb5f0ac0db432c2899ec93f42d1b3ce73c7aadd3fcd8b261b3df929c92bad80b3fd8130b4eba971acdad986c549d9c4f894baed642abfe8bae1ec5ae2bbf850f'
+hash = '8429e29608c023e8b0ff75013de6ccfc889ec84a42b1ddb3312380f5159bcaa675f0cd0f2981aa80690dd197fea63b3195d6edaa803d6bd955b9c6e7d50ba665'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/anaGQD2Q/versions/JK2VlwKh/crazyae2addons-2.6.2-all.jar'
+url = 'https://cdn.modrinth.com/data/anaGQD2Q/versions/DdUx8yRT/crazyae2addons-3.2.5-all.jar'
 
 [update.modrinth]
 mod-id = 'anaGQD2Q'
-version = 'JK2VlwKh'
+version = 'DdUx8yRT'

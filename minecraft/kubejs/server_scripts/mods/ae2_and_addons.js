@@ -5,13 +5,14 @@ ServerEvents.recipes(event => {
     event.remove({type: "expatternprovider:circuit_cutter"})
     event.remove({type: "advanced_ae:reaction_chamber"})
     event.remove({output: "megacells:sky_steel_ingot"})
-    event.remove({type: "crazyae2addons:research"})
-    event.remove({type: "crazyae2addons:research_recipes"})
+    event.remove({type: "insaneae2addons:research"})
+    event.remove({type: "insaneae2addons:research_recipes"})
     event.remove({type: "crazyae2addons:fabrication_recipes"})
     event.remove({type: "crazyae2addons:fabrication"})
-    event.remove({type: "crazyae2addons:cradle_recipes"})
-    event.remove({type: "crazyae2addons:cradle"})
-    event.remove({type: "crazyae2addons:entropy_cradle"})
+    event.remove({type: "crazyae2addons:recipe_fabricator"})
+    event.remove({type: "insaneae2addons:cradle_recipes"})
+    event.remove({type: "insaneae2addons:cradle"})
+    event.remove({type: "insaneae2addons:entropy_cradle"})
 
     // Basic materials
     // Charged Certus
@@ -242,7 +243,7 @@ ServerEvents.recipes(event => {
         A: "gtceu:polyvinyl_chloride_plate",
         B: "ae2:quartz_glass"
     }).id("kubejs:ae2/fluid_cell_housing")
-    event.shaped("crazyae2addons:mob_cell_housing", [
+    event.shaped("insaneae2addons:mob_cell_housing", [
         "ABA",
         "B B",
         "ABA"
@@ -646,8 +647,8 @@ ServerEvents.recipes(event => {
     event.remove({id: "expatternprovider:pre_bus"})
     event.remove({id: "expatternprovider:threshold_export_bus"})
     event.remove({id: "advanced_ae:stock_export_bus"})
-    event.remove({id: "crazyae2addons:nbt_export_bus"})
-    event.remove({id: "crazyae2addons:mob_export_bus"})
+    event.remove({id: "insaneae2addons:nbt_export_bus"})
+    event.remove({id: "insaneae2addons:mob_export_bus"})
 
     event.shaped("ae2:import_bus", [
         " C ",
@@ -727,14 +728,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.laser_engraver("kubejs:ae2/nbt_export_bus")
         .itemInputs("ae2:export_bus")
         .notConsumable("#forge:lenses/light_gray")
-        .itemOutputs("crazyae2addons:nbt_export_bus")
+        .itemOutputs("insaneae2addons:nbt_export_bus")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.HV])
 
     event.recipes.gtceu.laser_engraver("kubejs:ae2/mob_export_bus")
         .itemInputs("ae2:export_bus")
         .notConsumable("#forge:lenses/cyan")
-        .itemOutputs("crazyae2addons:mob_export_bus")
+        .itemOutputs("insaneae2addons:mob_export_bus")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.HV])
 
@@ -752,16 +753,16 @@ ServerEvents.recipes(event => {
     }).id("kubejs:ae2/energy_cell")
 
     const energyCells = [
-        ["4k_energy_cell", "megacells:mega_energy_cell", "gtceu:flawless_topaz_gem", "gtceu:double_electrum_plate", "crazyae2addons:energy_storage_4k"],
-        ["16k_energy_cell", "crazyae2addons:energy_storage_4k", "gtceu:flawless_emerald_gem", "gtceu:double_uranium_235_plate", "crazyae2addons:energy_storage_16k"],
-        ["64k_energy_cell", "crazyae2addons:energy_storage_16k", "gtceu:flawless_charged_certus_quartz_gem", "gtceu:double_ruthenium_plate", "crazyae2addons:energy_storage_64k"],
-        ["256k_energy_cell", "crazyae2addons:energy_storage_64k", "gtceu:flawless_fluix_gem", "gtceu:double_molybdenum_disilicide_plate", "crazyae2addons:energy_storage_256k"],
-        ["1m_energy_cell", "crazyae2addons:energy_storage_256k", "gtceu:exquisite_spessartine_gem", "gtceu:double_annealed_copper_plate", "crazyae2addons:energy_storage_1m"],
-        ["4m_energy_cell", "crazyae2addons:energy_storage_1m", "gtceu:exquisite_andradite_gem", "gtceu:double_gold_plate", "crazyae2addons:energy_storage_4m"],
-        ["16m_energy_cell", "crazyae2addons:energy_storage_4m", "gtceu:exquisite_uvarovite_gem", "gtceu:double_incoloy_ma_956_plate", "crazyae2addons:energy_storage_16m"],
-        ["64m_energy_cell", "crazyae2addons:energy_storage_16m", "gtceu:exquisite_blue_topaz_gem", "gtceu:double_blue_alloy_plate", "crazyae2addons:energy_storage_64m"],
-        ["256m_energy_cell", "crazyae2addons:energy_storage_64m", "gtceu:exquisite_amethyst_gem", "gtceu:double_indium_gallium_phosphide_plate", "crazyae2addons:energy_storage_256m"],
-        ["creative_energy_cell", "crazyae2addons:energy_storage_256m", "ae2:singularity", "gtceu:dense_naquadah_alloy_plate", "ae2:creative_energy_cell"]
+        ["4k_energy_cell", "megacells:mega_energy_cell", "gtceu:flawless_topaz_gem", "gtceu:double_electrum_plate", "insaneae2addons:energy_storage_4k"],
+        ["16k_energy_cell", "insaneae2addons:energy_storage_4k", "gtceu:flawless_emerald_gem", "gtceu:double_uranium_235_plate", "insaneae2addons:energy_storage_16k"],
+        ["64k_energy_cell", "insaneae2addons:energy_storage_16k", "gtceu:flawless_charged_certus_quartz_gem", "gtceu:double_ruthenium_plate", "insaneae2addons:energy_storage_64k"],
+        ["256k_energy_cell", "insaneae2addons:energy_storage_64k", "gtceu:flawless_fluix_gem", "gtceu:double_molybdenum_disilicide_plate", "insaneae2addons:energy_storage_256k"],
+        ["1m_energy_cell", "insaneae2addons:energy_storage_256k", "gtceu:exquisite_spessartine_gem", "gtceu:double_annealed_copper_plate", "insaneae2addons:energy_storage_1m"],
+        ["4m_energy_cell", "insaneae2addons:energy_storage_1m", "gtceu:exquisite_andradite_gem", "gtceu:double_gold_plate", "insaneae2addons:energy_storage_4m"],
+        ["16m_energy_cell", "insaneae2addons:energy_storage_4m", "gtceu:exquisite_uvarovite_gem", "gtceu:double_incoloy_ma_956_plate", "insaneae2addons:energy_storage_16m"],
+        ["64m_energy_cell", "insaneae2addons:energy_storage_16m", "gtceu:exquisite_blue_topaz_gem", "gtceu:double_blue_alloy_plate", "insaneae2addons:energy_storage_64m"],
+        ["256m_energy_cell", "insaneae2addons:energy_storage_64m", "gtceu:exquisite_amethyst_gem", "gtceu:double_indium_gallium_phosphide_plate", "insaneae2addons:energy_storage_256m"],
+        ["creative_energy_cell", "insaneae2addons:energy_storage_256m", "ae2:singularity", "gtceu:dense_naquadah_alloy_plate", "ae2:creative_energy_cell"]
     ]
 
     for (const ingredients of energyCells) {
@@ -894,8 +895,8 @@ ServerEvents.recipes(event => {
     event.remove({id:"ae2:materials/advancedcard"})
     event.remove({id:"ae2wtlib:quantum_bridge_card"})
     event.remove({id:"ae2wtlib:magnet_card"})
-    event.remove({id:"crazyae2addons:looting_upgrade_card"})
-    event.remove({id:"crazyae2addons:experience_upgrade_card"})
+    event.remove({id:"insaneae2addons:looting_upgrade_card"})
+    event.remove({id:"insaneae2addons:experience_upgrade_card"})
     event.remove({id:"advanced_ae:quantum_base_card"})
     event.remove({id:"extendedae_plus:entity_speed_card_8x"})
     event.remove({id:"extendedae_plus:entity_speed_card_16x"})
@@ -939,12 +940,12 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('extendedae_plus:entity_speed_card', '{"EAS:mult":4}'), ["ae2:advanced_card", "gtceu:ev_world_accelerator", "gtceu:quantum_star"]).id("kubejs:ae2/entity_speed_card_4")
     event.shapeless(Item.of('extendedae_plus:entity_speed_card', '{"EAS:mult":8}'), ["ae2:advanced_card", "gtceu:luv_world_accelerator", "gtceu:gravi_star"]).id("kubejs:ae2/entity_speed_card_8")
     event.shapeless(Item.of('extendedae_plus:entity_speed_card', '{"EAS:mult":16}'), ["ae2:advanced_card", "gtceu:uv_world_accelerator", "gtceu:gravi_star"]).id("kubejs:ae2/entity_speed_card_16")
-    event.shapeless("crazyae2addons:looting_upgrade_card", [
+    event.shapeless("insaneae2addons:looting_upgrade_card", [
         "ae2:advanced_card", 
         Item.of('minecraft:enchanted_book').enchant('minecraft:looting', 4).strongNBT(), 
         Item.of('minecraft:enchanted_book').enchant('minecraft:fortune', 4).strongNBT()
     ]).id("kubejs:ae2/looting_upgrade_card")
-    event.shapeless("crazyae2addons:experience_upgrade_card", [
+    event.shapeless("insaneae2addons:experience_upgrade_card", [
         "ae2:advanced_card", 
         Item.of('minecraft:enchanted_book').enchant('apotheosis:knowledge', 2).strongNBT(), 
         Item.of('minecraft:enchanted_book').enchant('infinite_abyss:crystal_affinity', 4).strongNBT()
@@ -981,7 +982,7 @@ ServerEvents.recipes(event => {
         ["swim_speed_card", "advanced_ae:quantum_upgrade_base", "1x minecraft:turtle_helmet", "4x gtceu:iv_electric_pump", "4x gtceu:double_zinc_plate", "6x gtceu:certus_sky_steel_rod", GTValues.VA[GTValues.IV]],
         ["night_vision_card", "advanced_ae:quantum_upgrade_base", Item.of('minecraft:potion', '{Potion:"minecraft:long_night_vision"}').strongNBT(), "1x gtceu:quarktech_helmet", "4x gtceu:double_uranium_235_plate", "4x gtceu:blacklight", GTValues.VA[GTValues.LuV]],
         ["flight_drift_card", "advanced_ae:quantum_upgrade_base", "4x gtceu:gravitation_engine_unit", "2x gtceu:zpm_field_generator", "4x gtceu:double_naquadah_alloy_plate", "3x #gtceu:circuits/uv", GTValues.VA[GTValues.ZPM]],
-        ["recharging_card", "advanced_ae:quantum_upgrade_base", "2x ae2:wireless_access_point", "1x crazyae2addons:energy_storage_256m", "4x megacells:greater_energy_card", "8x gtceu:advanced_smd_capacitor", GTValues.VA[GTValues.ZPM]],
+        ["recharging_card", "advanced_ae:quantum_upgrade_base", "2x ae2:wireless_access_point", "1x insaneae2addons:energy_storage_256m", "4x megacells:greater_energy_card", "8x gtceu:advanced_smd_capacitor", GTValues.VA[GTValues.ZPM]],
         ["portable_workbench_card", "advanced_ae:quantum_upgrade_base", "1x ae2:wireless_access_point", "1x ae2:cell_workbench", "4x gtceu:double_stellite_100_plate", "4x advanced_ae:quantum_alloy_plate", GTValues.VA[GTValues.IV]],
         ["pick_craft_card", "advanced_ae:quantum_upgrade_base", "1x ae2:wireless_access_point", "1x ae2peat:pattern_encoding_access_terminal", "4x gtceu:double_hsse_plate", "4x advanced_ae:quantum_alloy_plate", GTValues.VA[GTValues.LuV]]
     ]
@@ -1017,7 +1018,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({id:"expatternprovider:tag_storage_bus"}, "minecraft:redstone", "gtceu:red_alloy_foil")
     event.replaceInput({id:"expatternprovider:mod_storage_bus"}, "minecraft:redstone", "gtceu:manganese_foil")
     event.replaceInput({id:"expatternprovider:precise_storage_bus"}, "ae2:calculation_processor", "#gtceu:circuits/ulv")
-    event.replaceInput({id:"crazyae2addons:nbt_storage_bus"}, "ae2:logic_processor", "gtceu:niobium_nitride_foil")
+    event.replaceInput({id:"insaneae2addons:nbt_storage_bus"}, "ae2:logic_processor", "gtceu:niobium_nitride_foil")
 
     // IO Ports
     event.replaceInput({id:"ae2:network/blocks/io_port"}, "minecraft:iron_ingot", "gtceu:double_certus_sky_steel_plate")
@@ -1247,8 +1248,8 @@ ServerEvents.recipes(event => {
     event.replaceInput({id:"ae2:network/parts/annihilation_plane_alt"}, "ae2:fluix_crystal", "gtceu:fluix_plate")
     event.replaceInput({id:"ae2:network/parts/formation_plane"}, "ae2:fluix_crystal", "gtceu:fluix_plate")
     event.replaceInput({id:"ae2:network/parts/formation_plane_alt"}, "ae2:fluix_crystal", "gtceu:fluix_plate")
-    event.replaceInput({id:"crazyae2addons:mob_annihilation_plane"}, "minecraft:echo_shard", "gtceu:echo_shard_plate")
-    event.replaceInput({id:"crazyae2addons:mob_formation_plane"}, "minecraft:echo_shard", "gtceu:echo_shard_plate")
+    event.replaceInput({id:"insaneae2addons:mob_annihilation_plane"}, "minecraft:echo_shard", "gtceu:echo_shard_plate")
+    event.replaceInput({id:"insaneae2addons:mob_formation_plane"}, "minecraft:echo_shard", "gtceu:echo_shard_plate")
 
     event.replaceInput({id:"ae2:network/blocks/quantum_link"}, "ae2:quartz_glass", "mae2:cloud_chamber")
     event.replaceInput({id:"ae2:network/blocks/quantum_ring"}, "ae2:logic_processor", "#gtceu:circuits/iv")
@@ -1287,11 +1288,7 @@ ServerEvents.recipes(event => {
         "mae2:item_multi_p2p_tunnel",
         "crazyae2addons:round_robin_item_p2p_tunnel",
         "crazyae2addons:round_robin_fluid_p2p_tunnel",
-        "crazyae2addons:chunky_fluid_p2p_tunnel",
-        "crazyae2addons:extracting_fe_p2p_tunnel",
-        "crazyae2addons:extracting_item_p2p_tunnel",
-        "crazyae2addons:extracting_fluid_p2p_tunnel",
-        "crazyae2addons:wormhole_tunnel"
+        "crazyae2addons:wormhole"
     ]
 
     Tunnels.forEach(i => {
@@ -1573,8 +1570,8 @@ ServerEvents.recipes(event => {
     event.smelting("mae2:faulty_card", "ae2:memory_card").id("kubejs:ae2/faulty_memory_card")
 
     // Crazy AE2 additions
-    event.remove({id:"crazyae2addons:crazy_pattern_multiplier"})
-    event.shaped("crazyae2addons:crazy_pattern_multiplier", [
+    event.remove({id:"crazyae2addons:pattern_multiplier"})
+    event.shaped("crazyae2addons:pattern_multiplier", [
         "ABA",
         "BCB",
         "ABA"
@@ -1582,9 +1579,9 @@ ServerEvents.recipes(event => {
         A: "gtceu:silicone_rubber_plate",
         B: "gtceu:fine_iridium_wire",
         C: "expatternprovider:pattern_modifier"
-    }).id("kubejs:ae2/crazy_pattern_multiplier")
+    }).id("kubejs:ae2/pattern_multiplier")
 
-    event.shaped("crazyae2addons:builder_pattern", [
+    event.shaped("insaneae2addons:builder_pattern", [
         "ABA",
         "BCB",
         "ABA"
@@ -1601,10 +1598,10 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VHA[GTValues.HV])
 
-    event.replaceInput({id:"crazyae2addons:mob_key_selector"}, "ae2:engineering_processor", "gtceu:flawless_echo_shard_gem")
+    event.replaceInput({id:"insaneae2addons:mob_key_selector"}, "ae2:engineering_processor", "gtceu:flawless_echo_shard_gem")
 
     event.recipes.gtceu.extractor("kubejs:ae2/extract_xp_shard")
-        .itemInputs("1x crazyae2addons:xp_shard")
+        .itemInputs("1x insaneae2addons:xp_shard")
         .outputFluids("sophisticatedcore:xp_still 125")
         .duration(10)
         .EUt(8)
@@ -1621,15 +1618,16 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(8)
 
-    event.shaped("crazyae2addons:cpu_prio_tuner", [
+    event.shaped("crazyae2addons:cpu_priority_tuner", [
         "A A",
         " A ",
         "A A"
     ], {
         A: "#forge:plates/sky_steel"
-    }).id("kubejs:ae2/cpu_prio_tuner")
+    }).id("kubejs:ae2/cpu_priority_tuner")
 
-    event.shaped("crazyae2addons:ampere_meter", [
+    event.remove("insaneae2addons:ampere_meter")
+    event.shaped("insaneae2addons:ampere_meter", [
         "DCD",
         "BAB",
         "DED"
@@ -1641,56 +1639,56 @@ ServerEvents.recipes(event => {
         E: "#gtceu:circuits/ulv"
     }).id("kubejs:ae2/ampere_meter")
 
-    event.remove({id:"crazyae2addons:mob_farm_wall_alt5"})
-    event.remove({id:"crazyae2addons:mob_farm_collector_alt15"})
-    event.remove({id:"crazyae2addons:mob_farm_damage_alt11"})
-    event.remove({id:"crazyae2addons:mob_farm_input_alt1"})
-    event.remove({id:"crazyae2addons:mob_farm_controller_alt22"})
-    event.remove({id:"crazyae2addons:spawner_extractor_wall_alt3"})
-    event.remove({id:"crazyae2addons:spawner_extractor_controller_alt7"})
+    event.remove({id:"insaneae2addons:mob_farm_wall"})
+    event.remove({id:"insaneae2addons:mob_farm_collector"})
+    event.remove({id:"insaneae2addons:mob_farm_damage"})
+    event.remove({id:"insaneae2addons:mob_farm_input"})
+    event.remove({id:"insaneae2addons:mob_farm_controller"})
+    event.remove({id:"insaneae2addons:spawner_extractor_wall"})
+    event.remove({id:"insaneae2addons:spawner_extractor_controller"})
     event.recipes.gtceu.assembler("kubejs:ae2/mob_farm_wall")
         .itemInputs("gtceu:tungsten_frame", "4x gtceu:dense_obsidian_plate", "8x gtceu:zinc_rod")
         .inputFluids("gtceu:black_steel 576")
-        .itemOutputs("2x crazyae2addons:mob_farm_wall")
+        .itemOutputs("2x insaneae2addons:mob_farm_wall")
         .circuit(5)
         .duration(210)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/mob_farm_collector")
-        .itemInputs("crazyae2addons:mob_farm_wall", "2x gtceu:ev_item_collector", "6x ae2:annihilation_plane", "3x ae2:fluix_pearl")
-        .itemOutputs("1x crazyae2addons:mob_farm_collector")
+        .itemInputs("insaneae2addons:mob_farm_wall", "2x gtceu:ev_item_collector", "6x ae2:annihilation_plane", "3x ae2:fluix_pearl")
+        .itemOutputs("1x insaneae2addons:mob_farm_collector")
         .circuit(5)
         .duration(210)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/mob_farm_damage")
-        .itemInputs("crazyae2addons:mob_farm_wall", "2x megacells:mega_energy_cell", "4x gtceu:tungsten_carbide_buzz_saw_blade", "3x minecraft:echo_shard")
-        .itemOutputs("1x crazyae2addons:mob_farm_damage")
+        .itemInputs("insaneae2addons:mob_farm_wall", "2x megacells:mega_energy_cell", "4x gtceu:tungsten_carbide_buzz_saw_blade", "3x minecraft:echo_shard")
+        .itemOutputs("1x insaneae2addons:mob_farm_damage")
         .circuit(5)
         .duration(210)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/mob_farm_input")
-        .itemInputs("crazyae2addons:mob_farm_wall", "2x gtceu:mob_spawner_hazard_sign_block", "2x crazyae2addons:mob_formation_plane", "3x ae2:fluix_pearl")
-        .itemOutputs("1x crazyae2addons:mob_farm_input")
+        .itemInputs("insaneae2addons:mob_farm_wall", "2x gtceu:mob_spawner_hazard_sign_block", "2x insaneae2addons:mob_formation_plane", "3x ae2:fluix_pearl")
+        .itemOutputs("1x insaneae2addons:mob_farm_input")
         .circuit(5)
         .duration(210)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/mob_farm_controller")
-        .itemInputs("crazyae2addons:mob_farm_wall", "2x #gtceu:circuits/iv", "1x gtceu:quantum_star", "3x gtceu:ev_emitter", "2x gtceu:ev_sensor")
+        .itemInputs("insaneae2addons:mob_farm_wall", "2x #gtceu:circuits/iv", "1x gtceu:quantum_star", "3x gtceu:ev_emitter", "2x gtceu:ev_sensor")
         .inputFluids("sophisticatedcore:xp_still 2000")
-        .itemOutputs("1x crazyae2addons:mob_farm_controller")
+        .itemOutputs("1x insaneae2addons:mob_farm_controller")
         .circuit(5)
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/spawner_extractor_wall")
         .itemInputs("gtceu:ultimet_frame", "4x gtceu:dense_energetic_alloy_plate", "8x minecraft:blaze_rod")
         .inputFluids("gtceu:blue_steel 576")
-        .itemOutputs("2x crazyae2addons:spawner_extractor_wall")
+        .itemOutputs("2x insaneae2addons:spawner_extractor_wall")
         .circuit(5)
         .duration(210)
         .EUt(GTValues.VA[GTValues.EV])
     event.recipes.gtceu.assembler("kubejs:ae2/spawner_extractor_controller")
-        .itemInputs("crazyae2addons:spawner_extractor_wall", "2x #gtceu:circuits/iv", "1x gtceu:quantum_star", "3x gtceu:ev_field_generator")
+        .itemInputs("insaneae2addons:spawner_extractor_wall", "2x #gtceu:circuits/iv", "1x gtceu:quantum_star", "3x gtceu:ev_field_generator")
         .inputFluids("gtceu:polyvinyl_butyral 1440")
-        .itemOutputs("1x crazyae2addons:spawner_extractor_controller")
+        .itemOutputs("1x insaneae2addons:spawner_extractor_controller")
         .circuit(5)
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
@@ -1737,5 +1735,13 @@ ServerEvents.recipes(event => {
     event.replaceInput({id:"aeinfinitybooster:infinity_card"}, "minecraft:nether_star", "ae2wtlib:quantum_bridge_card")
     event.replaceInput({id:"aeinfinitybooster:infinity_card"}, "minecraft:ender_eye", "gtceu:quantum_eye")
     event.replaceInput({id:"aeinfinitybooster:infinity_card"}, "minecraft:netherite_ingot", "gtceu:netherite_foil")
+
+    // CAE2 display database
+    event.recipes.gtceu.assembler("kubejs:cae2/me_display_database")
+        .itemInputs("6x crazyae2addons:display", "1x ae2:controller")
+        .itemOutputs("crazyae2addons:me_display_database")
+        .duration(120)
+        .circuit(5)
+        .EUt(GTValues.VA[GTValues.MV])
  
 })
