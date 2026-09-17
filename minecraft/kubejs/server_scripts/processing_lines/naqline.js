@@ -38,11 +38,10 @@ ServerEvents.recipes(event => {
 
     // Ke organic layer (...)
 
-    // 48x Rb3Cs2KeBa6As4P2O24Cl6
     // 48x Cs3Ke2RbBa6As6O24Br3Cl2I
     // 48x Ke3Cs2FrBa6As6O24I4Br2
     // 29x Be3Nq2Si6O18
-    // 11x N2H8Nq+TeO4S
+    // 11x (NH4)2Nq+TeO4S | N2H8Nq+TeO4S
     // 41x Nq(UO2)4Xe3Si6O21F6 | NqU4O29Xe3Si6F6
     // 60x CsKeBe4Li2Al2GaInSi12O36
     // 6x NqSiO4
@@ -51,10 +50,13 @@ ServerEvents.recipes(event => {
     // 4x CsKeI2
     // 6x Nq+SbO4
 
-    // TODO: check common fluoride states for actinides (curr. assumed F4 for all)
+    // 
+    
+
+    // Validated I/O's
     // VALIDATED: 45x KeNq4Np2PbGeO29Si6H + 5000mb HBF4 + 36x SbF5 + 6000mb SO2HF2 || 6x KeBF4 + 28x NqBF5 + 10x NpF4 + 3x PbF2 + 5x GeF4 + 30x SiF4 + 15x Sb2O3 + 6000mb H2SO4 + 8000mb O2
     // VALIDATED: 45x KeNq+3NqAmPuBiGeO29Si6H + 5000mb HBF4 + 36x SbF5 + 6000mb SO2HF2 || 6x KeBF4 + 21x Nq+BF5 + 7x NqBF5 + 5x AmF4 + 5x PuF4 + 3x BiOF + 5x GeF4 + 30x SiF4 + 15x Sb2O3 + 6000mb H2SO4 + 7000mb O2 + 1000mb F2
     // VALIDATED: 44x Ke*Nq*Nq3Cm2TlGe2O28Si5I + 5000mb HBF4 + 36x SbF5 + 6000mb SO2HF2 || 6x KeBF4 + 7x *Nq*BF5 + 21x Nq3BF5 + 8x CmF3 + 2x TlF + 10x GeF4 + 25x SiF4 + 1000mb ISO3F + 15x Sb2O3 + 5000mb H2SO4 + 8000mb O2 + 1000mb H2
-    
+    // VALIDATED: 48x Rb3Cs2KeBa6As4P2O24Cl6 + 5000mb HBF4 + 36x SbF5 + 5000mb SO2HF2 || 6x RbF, 4x CsF, 6x KeBF4, 18x BaF2, 16x AsF3, 8x PF3, 24x ClF3 + 15 Sb2O3 + 5000mb H2SO4 + 10x B2O3 + 1000mb F2 [- 1000mb O2]
     
 })
