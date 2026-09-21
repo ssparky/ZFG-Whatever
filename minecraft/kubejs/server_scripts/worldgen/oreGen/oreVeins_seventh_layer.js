@@ -362,7 +362,7 @@ GTCEuServerEvents.oreVeins(event => {
                     weight: 3
                 }
             ],
-            rareBlockChance: 0.99,
+            rareBlockChance: 0.59,
             veininessThreshold: 0.1,
             maxRichnessThreshold: 0.9,
             minRichness: 0.83,

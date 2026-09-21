@@ -94,6 +94,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // monazite_ore_prop.setOreByProducts("thorium_232", GTMaterials.Neodymium, GTMaterials.RareEarth)
     // GTMaterials.Monazite.setProperty($PropertyKey.ORE, monazite_ore_prop)
 
+    // TODO: rock salt (sylvite) rubidium chloride byprod.
+    // TODO: lepidolite caesium oxide byprod.
+    // TODO: biotite ore w/ caesium oxide byprod.
+    // TODO: barium radium byprod.
+    // TODO: pyrite arsenopyrite byprod.
+
 });
 
 GTCEuStartupEvents.materialModification(event => {

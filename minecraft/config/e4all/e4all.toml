@@ -36,7 +36,7 @@ offlineMode = false
 offlineWarningShown = true
 # Whether the welcome message has already been shown to the user
 # default: false
-welcomeShown = false
+welcomeShown = true
 # Whether to hide the domain in the chat message (click to copy still works)
 # default: false
 hideDomainInChat = false
