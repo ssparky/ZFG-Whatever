@@ -357,7 +357,7 @@ GTCEuServerEvents.oreVeins(event => {
             type: "layered",
             layers: [
                 {weight: 5, material: GTMaterials.get("xanthoconite"), minSize: 2, maxSize: 3},
-                {weight: 4, material: GTMaterials.get("pyrargyite"), minSize: 1, maxSize: 3},
+                {weight: 4, material: GTMaterials.get("pyrargyrite"), minSize: 1, maxSize: 3},
                 {weight: 3, material: GTMaterials.get("stephanite"), minSize: 2, maxSize: 4},
                 {weight: 2, material: GTMaterials.get("laffittite"), minSize: 1, maxSize: 3},
                 {weight: 2, material: GTMaterials.get("acanthite"), minSize: 1, maxSize: 4}
